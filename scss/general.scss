@@ -1,0 +1,301 @@
+.Transelca-V {
+  .btn-isa {
+    a,
+    button,
+    input {
+      padding: 8px 23px 8px 23px;
+      border-radius: 24px;
+      background-color: var(--dark-blue-50);
+      border: solid 1px var(--dark-blue-50);
+      color: var(--white-main);
+      display: block;
+      width: max-content;
+      font-size: var(--font-size-16);
+      font-family: var(--font-regular);
+    }
+    &.icon-V {
+      a,
+      button,
+      input {
+        padding: 8px 23px 8px 19px;
+      }
+    }
+    &.icon-after-V {
+      a,
+      button,
+      input {
+        padding: 8px 52px 8px 19px;
+        position: relative;
+        &::after {
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: 20px;
+          position: absolute;
+          height: min-content;
+          right: 23px;
+          top: 0;
+          bottom: 0;
+          margin: auto 0px;
+        }
+      }
+    }
+    &.variant-orange {
+      a,
+      button,
+      input {
+        background-color: var(--orange-50);
+        border-color: var(--orange-50);
+      }
+    }
+    a,
+    button,
+    input {
+      &:hover {
+        text-decoration: none;
+        transition-duration: 0.3s;
+        transition-property: transform;
+      }
+    }
+    &.jump-V {
+      a,
+      button,
+      input {
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    &.jump-up-V {
+      a,
+      button,
+      input {
+        &:hover {
+          transform: translateY(-8px);
+        }
+      }
+    }
+    &.btn-transparent-V {
+      a,
+      button,
+      input {
+        background-color: transparent;
+        color: var(--dark-blue-50);
+        -webkit-appearance: auto;
+      }
+      &.white-V {
+        a,
+        button,
+        input {
+          border-color: var(--white-main);
+          color: var(--white-main);
+        }
+        &.color-V {
+          a,
+          button,
+          input {
+            &:hover {
+              background-color: var(--black-100);
+              filter: grayscale(0.5);
+              transition-property: background-color;
+            }
+          }
+        }
+      }
+      &.color-V {
+        a,
+        button,
+        input {
+          &:hover {
+            background-color: var(--dark-blue-50);
+            color: var(--white-main);
+          }
+        }
+      }
+    }
+  }
+  .link-isa {
+    font-family: var(--font-regular);
+    font-size: var(--font-size-16);
+    color: var(--dark-blue-50);
+  }
+  .banner-title-V {
+    color: var(--white-main);
+    font-family: var(--font-bold);
+  }
+  .not-margin-b {
+    margin-bottom: 0px !important;
+  }
+  .separator-V {
+    &.separator-left {
+      padding: 15px 0px;
+      span {
+        display: block;
+        width: 35px;
+        height: 3.3px;
+        background-color: var(--orange-50);
+      }
+    }
+  }
+
+  .title-V {
+    font-size: var(--font-size-32);
+    font-family: var(--font-bold);
+    color: var(--dark-blue-50);
+    &.orange-V {
+      color: var(--orange-50);
+    }
+    &.blue-V {
+      color: var(--blue-50);
+    }
+    &.dark-blue-V {
+      color: var(--dark-blue-50);
+    }
+    &.center-V {
+      text-align: center;
+      &.underline-V {
+        &::after {
+          right: 0;
+          margin: 0px auto;
+        }
+      }
+    }
+  }
+
+  .underline-V {
+    padding-bottom: 18px;
+    margin-bottom: 15px;
+    position: relative;
+    &::after {
+      content: "";
+      width: 17px;
+      height: 3px;
+      background-color: var(--orange-50);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .paragraph-V {
+    font-size: var(--font-size-18);
+    font-family: var(--font-regular);
+    color: var(--black-80);
+    &.blue-V {
+      color: var(--blue-50);
+    }
+    &.text_orange {
+      color: var(--orange-50);
+    }
+    &.text_blue {
+      color: var(--dark-blue-50);
+    }
+    &.text_gray {
+      color: var(--black-80);
+    }
+    &.txt_lg {
+      font-size: var(--font-size-32);
+      font-weight: 700;
+    }
+    &.txt_md {
+      font-size: var(--font-size-18);
+    }
+
+    &.txt_sm {
+      font-size: var(--font-size-14);
+    }
+  }
+
+  .white-V {
+    color: var(--white-main);
+  }
+  .size-45-V {
+    font-size: var(--font-size-45);
+  }
+  .size-40-V {
+    font-size: var(--font-size-40);
+  }
+  .size-28-V {
+    font-size: var(--font-size-28);
+  }
+  .size-22-V {
+    font-size: var(--font-size-22);
+  }
+  .size-20-V {
+    font-size: var(--font-size-20);
+  }
+  .size-18-V {
+    font-size: var(--font-size-18);
+  }
+  .size-14-V {
+    font-size: var(--font-size-14);
+  }
+  .bold-V {
+    font-family: var(--font-bold);
+  }
+
+  .mask-V {
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .rich-container {
+    .rich-title-V {
+      color: var(--dark-blue-50);
+      &.orange-V {
+        color: var(--orange-50);
+      }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .rich-title-V {
+      font-family: var(--font-bold);
+    }
+    a {
+      font-family: var(--font-regular);
+      color: var(--dark-blue-50);
+      text-align: left;
+    }
+    p {
+      font-family: var(--font-regular);
+      color: var(--black-80);
+      &.t-s-editor-content__orange {
+        color: var(--orange-50);
+      }
+    }
+    ul,
+    ol {
+      padding-left: 25px;
+    }
+    li {
+      font-family: var(--font-regular);
+      color: var(--black-80);
+    }
+  }
+  .invalid-error {
+    font-family: var(--font-regular);
+    color: var(--error-color);
+    font-size: var(--font-size-14);
+    margin-top: 5px;
+  }
+
+  .slick-dots {
+    left: 0;
+  }
+  .slick-dots li button:focus:before,
+  .slick-dots li button:hover:before {
+    opacity: 0.2;
+  }
+  /*.wp-block-cover-image.is-light .wp-block-cover__inner-container,
+    .wp-block-cover.is-light .wp-block-cover__inner-container{
+        background: rgb(0,0,0);
+        background: linear-gradient(270deg, rgba(0,0,0,0) 20%, rgba(0,0,0,0.9279061966583508) 100%);
+    }*/
+}

@@ -1,0 +1,4219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap 4.6 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./css/jquery.dataTables.min.css" />
+
+    <title>Transelca</title>
+  </head>
+
+  <body class="Transelca-V">
+    <header class="header-V is-sticky">
+      <nav class="navbar navbar-expand-xl justify-content-between">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./images/logo_tran.jpg"
+            width="202"
+            height="69"
+            class="d-inline-block align-top"
+            alt="Logo-Transelca"
+          />
+        </a>
+        <div class="items-container-mobile">
+          <div class="search-V">
+            <a
+              class="nav-link"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+              title="Desplegar Buscador"
+            >
+              <span class="sr-only">Desplegabar buscador</span>
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown-menu">
+              <div class="search-container container-sm">
+                <form role="search">
+                  <div>
+                    <span>
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                      <input
+                        type="text"
+                        value=""
+                        id="search-V"
+                        placeholder="Buscar en Transelca"
+                        aria-label="Buscador"
+                      />
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="menu de navegacion"
+          >
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+          <div class="languaje-V">
+            <select
+              onchange="doGTranslate(this);"
+              class="notranslate"
+              id="gtranslate_selector"
+              aria-label="Website Language Selector"
+            >
+              <option value="es|en">EN</option>
+              <option value="es|es">ES</option>
+            </select>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="nav-container d-flex justify-content-between">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Cerrar menu de navegacion"
+            >
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <ul class="navbar-nav principal-nav-V">
+              <li class="nav-item dropdown dropdown-V">
+                <div class="btn-grup-V">
+                  <a
+                    title="iIr a ¿Quienes somos?"
+                    class="nav-link"
+                    href="https://www.youtube.com/"
+                  >
+                    ¿Quienes somos?
+                  </a>
+                  <button
+                    class="btn-drop-mobile"
+                    title="menu desplegable ¿Quienes somos?"
+                  >
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div class="dropdown-menu">
+                  <ul class="drop-V container mx-auto">
+                    <li class="drop-item-V">
+                      <div class="btn-grup-V">
+                        <a href="#" title="Ir a Test">Nivel 1 agregar</a>
+                        <button
+                          class="btn-sub-drop-mobile"
+                          title="menu Desplegable test"
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <ul class="sub-menu-V">
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="drop-item-V">
+                      <div class="btn-grup-V">
+                        <a href="#" title="Ir a Test">Nivel 1 ses</a>
+                        <button
+                          class="btn-sub-drop-mobile"
+                          title="menu desplegable test"
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <ul class="sub-menu-V">
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="drop-item-V">
+                      <div class="btn-grup-V">
+                        <a href="#" title="ir a Test">Nivel 1 Quienes</a>
+                        <button
+                          class="btn-sub-drop-mobile"
+                          title="menu desplegable Test"
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <ul class="sub-menu-V">
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="drop-item-V">
+                      <div class="btn-grup-V">
+                        <a href="#" title="ir a Test"
+                          >Nivel 1 Informacion corporativa</a
+                        >
+                        <button
+                          class="btn-sub-drop-mobile"
+                          title="menu desplegable Test"
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <ul class="sub-menu-V">
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="drop-item-V">
+                      <div class="btn-grup-V">
+                        <a href="#" title="ir a Test"
+                          >Informacion Corporativa</a
+                        >
+                        <button
+                          class="btn-sub-drop-mobile"
+                          title="menu desplegable Test"
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <ul class="sub-menu-V">
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="drop-item-V">
+                      <div class="btn-grup-V">
+                        <a href="#" title="ir a Test">Informacion Finaciera</a>
+                        <button
+                          class="btn-sub-drop-mobile"
+                          title="menu desplegable Test"
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <ul class="sub-menu-V">
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-V">
+                <div class="btn-grup-V">
+                  <a
+                    class="nav-link"
+                    href="https://www.youtube.com/"
+                    title="Ir a Nuestros Clientes"
+                  >
+                    Nuestros Clientes
+                  </a>
+                  <button
+                    class="btn-drop-mobile"
+                    title="Menu desplegable Nuestros Clientes"
+                  >
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div class="dropdown-menu">
+                  <ul class="drop-V container mx-auto">
+                    <li class="drop-item-V">
+                      <div class="btn-grup-V">
+                        <a href="#" title="Ir a Test">Test</a>
+                        <button
+                          class="btn-sub-drop-mobile"
+                          title="menu desplegable test"
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <ul class="sub-menu-V">
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="drop-item-V">
+                      <div class="btn-grup-V">
+                        <a href="#" title="Ir a Test">Test</a>
+                        <button
+                          class="btn-sub-drop-mobile"
+                          title="menu desplegable test"
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <ul class="sub-menu-V">
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-V">
+                <div class="btn-grup-V">
+                  <a
+                    class="nav-link"
+                    href="https://www.youtube.com/"
+                    title="Ir a Nuestros Proveedores"
+                  >
+                    Nuestros Proveedores
+                  </a>
+                  <button
+                    class="btn-drop-mobile"
+                    title="menu desplegable Nuestros Proveedores"
+                  >
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div class="dropdown-menu">
+                  <ul class="drop-V container mx-auto">
+                    <li class="drop-item-V">
+                      <div class="btn-grup-V">
+                        <a href="#" title="Ir a Test">Test</a>
+                        <button
+                          class="btn-sub-drop-mobile"
+                          title="Menu desplegable Test"
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <ul class="sub-menu-V">
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-V">
+                <div class="btn-grup-V">
+                  <a
+                    class="nav-link"
+                    href="https://www.youtube.com/"
+                    title="Ir a Inversionistas"
+                  >
+                    Inversionistas
+                  </a>
+                  <button
+                    class="btn-drop-mobile"
+                    title="Menu desplegable Inversionistas"
+                  >
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div class="dropdown-menu">
+                  <ul class="drop-V container mx-auto">
+                    <li class="drop-item-V">
+                      <a href="#" title="Ir a Test">Test</a>
+                    </li>
+                    <li class="drop-item-V">
+                      <a href="#" title="Ir a Test">Test</a>
+                    </li>
+                    <li class="drop-item-V">
+                      <a href="#" title="Ir a Test">Test</a>
+                    </li>
+                    <li class="drop-item-V">
+                      <a href="#" title="Ir a Test"
+                        >Test muy largo para ver sus efectos</a
+                      >
+                    </li>
+                    <li class="drop-item-V">
+                      <a href="#" title="Ir a Test"
+                        >Test de un salto de linea</a
+                      >
+                    </li>
+                    <li class="drop-item-V">
+                      <a href="#" title="Ir a Test"
+                        >Test tes asafad asdasd sfasdf
+                      </a>
+                    </li>
+                    <li class="drop-item-V">
+                      <a href="#" title="Ir a Test">Test</a>
+                    </li>
+                    <li class="drop-item-V">
+                      <a href="#" title="Ir a Test">Test</a>
+                    </li>
+                    <li class="drop-item-V">
+                      <a href="#" title="Ir a Test">Test</a>
+                    </li>
+                    <li class="drop-item-V">
+                      <a href="#" title="Ir a Test">Test</a>
+                    </li>
+                    <li class="drop-item-V">
+                      <a href="#" title="Ir a Test">Test</a>
+                    </li>
+                    <li class="drop-item-V">
+                      <a href="#" title="Ir a Test">Test</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-V">
+                <div class="btn-grup-V">
+                  <a
+                    class="nav-link"
+                    href="https://www.youtube.com/"
+                    title="Ir a Sala de Prensa"
+                  >
+                    Sala de Prensa
+                  </a>
+                  <button
+                    class="btn-drop-mobile"
+                    title="Menu desplegable Sala de Prensa"
+                  >
+                    <span class="sr-only">Menu desplegable Sala de Prensa</span>
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div class="dropdown-menu">
+                  <ul class="drop-V container mx-auto">
+                    <li class="drop-item-V">
+                      <div class="btn-grup-V">
+                        <a href="#" title="Ir a Test">Test</a>
+                        <button
+                          class="btn-sub-drop-mobile"
+                          title="menu desplegable test"
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <ul class="sub-menu-V">
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" title="Conexión Jaguar">
+                  Conexión Jaguar
+                </a>
+              </li>
+            </ul>
+            <hr />
+            <ul class="navbar-nav end-nav-V">
+              <li class="nav-item dropdown dropdown-V search-V">
+                <a
+                  class="nav-link"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  title="Desplegable de buscador"
+                >
+                  <span class="sr-only">Desplegable de buscador</span>
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="overlay" onclick="hideSearch()"></div>
+                  <div class="search-container container-sm">
+                    <form>
+                      <div>
+                        <span>
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                          <input
+                            type="text"
+                            value=""
+                            id="search-V"
+                            placeholder="Buscar en Transelca"
+                            aria-label="Buscador"
+                          />
+                        </span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-V help-menu-V">
+                <a
+                  class="nav-link"
+                  href="test"
+                  title="Menu de ayuda desplegable"
+                >
+                  <span class="sr-only">Menu de ayuda desplegable</span>
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-menu">
+                  <ul class="drop-V container mx-auto">
+                    <li class="drop-item-V">
+                      <div class="btn-grup-V">
+                        <a href="#" title="Ir a Test">Test</a>
+                        <button
+                          class="btn-sub-drop-mobile"
+                          title="menu desplegable Test"
+                        >
+                          <span class="sr-only">Menu desplegable Test</span>
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <ul class="sub-menu-V">
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="drop-item-V">
+                      <div class="btn-grup-V">
+                        <a href="#" title="Ir a Test">Test</a>
+                        <button
+                          class="btn-sub-drop-mobile"
+                          title="menu desplegable Test"
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <ul class="sub-menu-V">
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="drop-item-V">
+                      <div class="btn-grup-V">
+                        <a href="#" title="Ir a Test">Test</a>
+                        <button
+                          class="btn-sub-drop-mobile"
+                          title="menu desplegable Test"
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <ul class="sub-menu-V">
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="drop-item-V">
+                      <div class="btn-grup-V">
+                        <a href="#" title="Ir a Test">Test</a>
+                        <button
+                          class="btn-sub-drop-mobile"
+                          title="menu desplegable Test"
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <ul class="sub-menu-V">
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                        <li>
+                          <a href="#" title="Ir a Test">Test</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="drop-item-V">
+                      <a href="#" title="Ir a Test">Test</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item btn-login-V">
+                <a
+                  class="nav-link"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#login-V"
+                  tabindex="0"
+                  title="Iniciar sesion"
+                >
+                  <span class="sr-only">Iniciar sesion</span>
+                  <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown languaje-V">
+                <select
+                  onchange="doGTranslate(this);"
+                  class="notranslate"
+                  id="gtranslate_selector"
+                  aria-label="Website Language Selector"
+                >
+                  <option value="es|en">EN</option>
+                  <option value="es|es">ES</option>
+                </select>
+              </li>
+            </ul>
+            <div class="btn-isa btn-transparent-V white-V mx-auto">
+              <a
+                type="button"
+                data-toggle="modal"
+                data-target="#login-V"
+                tabindex="0"
+                title="Iniciar sesion"
+              >
+                INICIAR SESION
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Modal Login -->
+    <div
+      class="modal fade modal-login-V"
+      id="login-V"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="login-title"
+      aria-hidden="true"
+    >
+      <div class="login-V modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal-title sr-only" id="login-title"
+              >Iniciar sesion</span
+            >
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Cerrar inicio de sesion"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <fieldset>
+                <legend class="sr-only">Datos de inicio de sesion</legend>
+                <div class="form-group">
+                  <label for="login-email">Usuario*</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="login-email"
+                    placeholder="Ingrese usuario"
+                    required
+                  />
+                </div>
+                <div class="form-group has-error">
+                  <label for="login-password">Contraseña*</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="login-password"
+                    placeholder="Ingrese contraseña"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <div class="captcha-V mx-auto">
+                <img src="./images/captcha.PNG" alt="capt" />
+              </div>
+              <div class="btn-isa mt-4 d-flex justify-content-center">
+                <a title="Iniciar Sesion" href="#" id="validateLogin"
+                  >Iniciar Sesion</a
+                >
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="#" title="ir a Recuperar contraseña"
+              >Recuperar contraseña</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HU - 07 - Pluggin ultimamete banner -->
+    <!-- Configuracion del banner
+            - Select Banner Layout: Layout 3
+            - Banner Type: Background Image
+            - Background Image Size: cover
+            - Background Image Attachment: Fixed 
+            - Background Image Left & Right Position: 50%
+            - Banner Inner Wrap Width: 1140px
+            - Title Font Size 39
+            - Banner Inner Padding
+                - Top: 170px 
+                - Right:
+                - Bottom: 170px
+                - Left:
+        -->
+
+    <style type="text/css">
+      .hbupro-hero-banner-wrp-1 .hbupro-hero-banner {
+        background-image: url(./images/top_gobierno.jpg);
+        background-size: cover;
+        background-position: 50% center;
+        background-attachment: fixed;
+      }
+      .hbupro-hero-banner-wrp-1 .hbupro-hero-banner-inner-wrap {
+        max-width: 1140px;
+      }
+      .hbupro-hero-banner-wrp-1
+        .hbupro-hero-banner
+        h2.hbupro-hero-banner-title {
+        font-size: 39px !important;
+        line-height: 39px !important;
+        color: #fff;
+        text-transform: uppercase;
+      }
+      .hbupro-hero-banner-wrp-1
+        .hbupro-hero-banner
+        .hbupro-hero-banner-sub-title
+        p {
+        font-size: 20px !important;
+        color: #fff;
+      }
+      .hbupro-hero-banner-wrp-1 .hbupro-hero-banner-inner {
+        padding: 170px 0px 170px 0px;
+      }
+    </style>
+    <div
+      class="banner-V hbupro-hero-banner-wrp-1 hbupro-clearfix hbupro-layout-3"
+    >
+      <div class="hbupro-hero-banner hbupro-clearfix">
+        <div class="lines-banner-V"></div>
+        <div class="hbupro-hero-banner-inner hbupro-clearfix">
+          <div class="hbupro-hero-banner-inner-wrap">
+            <div
+              class="hbupro-medium-6 hbupro-columns hbupro-hero-content-position hbupro-text-left"
+            >
+              <h2
+                class="hbupro-hero-banner-title banner-title-V title-line-left-V not-margin-b"
+              >
+                GOBIERNO CORPORATIVO
+              </h2>
+              <div class="separator-V separator-left">
+                <span></span>
+              </div>
+              <div class="hbupro-hero-banner-sub-title"></div>
+            </div>
+          </div>
+        </div>
+        <svg
+          class="onda-V"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            class="elementor-shape-fill"
+            d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3
+                c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3
+                c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <!-- Rediseño HU 07 -->
+    <section class="t-c-banner-prensa">
+      <div class="t-c-banner-prensa__lines"></div>
+      <div class="t-c-banner-prensa__box-content">
+        <div class="container">
+          <div class="t-c-banner-prensa__text">
+            <h2 class="t-c-banner-prensa__text__title">COMUNICADOS</h2>
+            <div class="separator-V separator-left">
+              <span></span>
+            </div>
+            <h2 class="t-c-banner-prensa__text__content">
+              TITULO ARTíCULO DE PRUEBA NUMERO 14 PARA VALIDAR LA CANTIDAD DE
+              CARACTERES, QUE PUEDE TAMAñO LA NOTICIA Y SE AJUSTE A LA RELACIóN
+              DEL TITULO ESTáN
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-c-banner-prensa__img">
+        <img src="images/top_gobierno.jpg" alt="" />
+      </div>
+
+      <svg
+        class="t-c-banner-prensa__onda"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1000 100"
+        preserveAspectRatio="none"
+      >
+        <path
+          class="elementor-shape-fill"
+          d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3
+        c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3
+        c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"
+        ></path>
+      </svg>
+    </section>
+    <!-- start  HU 06 -->
+    <section class="t-c-banner-icon">
+      <div class="t-c-banner-icon__box-content">
+        <div class="t-c-banner-icon__icon">
+          <img
+            src="https://www.isa.co/wp-content/uploads/2020/12/logo_energia.png"
+            alt=""
+          />
+        </div>
+        <div class="t-c-banner-icon__text">
+          <h2 class="t-c-banner-icon__text__title">ENERGÍA ELÉCTRICA</h2>
+          <p class="t-c-banner-icon__text__content">
+            Conectamos a millones de personas con la mejor energía.
+          </p>
+        </div>
+      </div>
+
+      <div class="t-c-banner-icon__img">
+        <img
+          src="https://www.isa.co/wp-content/uploads/2020/12/top_negocios_energia_int.jpg"
+          alt=""
+        />
+      </div>
+
+      <svg
+        class="t-c-banner-icon__onda"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1000 100"
+        preserveAspectRatio="none"
+      >
+        <path
+          class="elementor-shape-fill"
+          d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3
+        c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3
+        c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"
+        ></path>
+      </svg>
+    </section>
+    <!-- end  HU 06 -->
+
+    <!-- start  HU 08 -->
+
+    <section class="t-s-editor-content my-5 t-s-editor-content__blue__title">
+      <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+          asperiores sequi vero natus quas aut, eius accusantium minima
+          laboriosam error, porro debitis ea animi dolorum. Exercitationem
+          aperiam ut odit reiciendis.
+        </p>
+        <h1>Title heading 1</h1>
+        <h2>Title heading 2</h2>
+        <h3>Title heading 3</h3>
+        <h4>Title heading 4</h4>
+        <h5>Title heading 5</h5>
+        <h6>Title heading 6</h6>
+        <ul>
+          <li>txt</li>
+          <li>txt</li>
+          <li>txt</li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              href=""
+              target=""
+              title="titulo para accesibildad, este debe ser editable por el usuario"
+              >enlace</a
+            >
+          </li>
+        </ul>
+        <a href="">enlaceTwo</a>
+        <ol>
+          <li>txt</li>
+          <li>txt</li>
+          <li>txt</li>
+        </ol>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/p38QeFhXxEs"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <img src="./images/Asamblea.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- end  HU 08 -->
+
+    <!-- start  HU 09 -->
+
+    <section
+      class="t-c-banner-silder-h09"
+      style="background-color: var(--blue-10)"
+    >
+      <svg
+        class="t-c-banner-silder-h09__onda"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1000 100"
+        preserveAspectRatio="none"
+      >
+        <path
+          class="elementor-shape-fill"
+          d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+	c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+	c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
+        ></path>
+      </svg>
+
+      <div class="container">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="t-c-banner-silder-h09__box-content">
+              <div
+                class="t-c-banner-silder-h09__column t-c-banner-silder-h09__columnOne"
+              >
+                <img
+                  class="t-c-banner-silder-h09__icon"
+                  src="images/icons/icon-check.svg"
+                  alt=""
+                />
+                <h2 class="t-c-banner-silder-h09__title">
+                  ¿Por qué es importante transportar energía?
+                </h2>
+                <p class="t-c-banner-silder-h09__txt__black">
+                  La transmisión es fundamental para la creación de un mercado
+                  de energía, al ser el punto de encuentro entre generación y la
+                  demanda, a través de ella, se logra el intercambio físico de
+                  la energía eléctrica y se optimiza el uso de los recursos de
+                  generación.
+                </p>
+                <p class="t-c-banner-silder-h09__txt__orange">
+                  Trabajamos para que cuando la energía eléctrica se genere
+                  pueda llegar a millones de personas en el continente.
+                </p>
+                <p class="t-c-banner-silder-h09__txt__orange">
+                  Trabajamos para que cuando la energía eléctrica se genere
+                  pueda llegar a millones de personas en el continente.
+                </p>
+                <p class="t-c-banner-silder-h09__txt__orange">
+                  Trabajamos para que cuando la energía eléctrica se genere
+                  pueda llegar a millones de personas en el continente.
+                </p>
+              </div>
+              <div
+                class="t-c-banner-silder-h09__column t-c-banner-silder-h09__columnTwo"
+              >
+                <div class="t-c-banner-silder-h09__column__img">
+                  <img
+                    src="https://www.isa.co/wp-content/uploads/2020/12/gal_ener_4.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="t-c-banner-silder-h09__description">Línea ISA</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="t-c-banner-silder-h09__box-content">
+              <div
+                class="t-c-banner-silder-h09__column t-c-banner-silder-h09__columnOne"
+              >
+                <img
+                  class="t-c-banner-silder-h09__icon"
+                  src="images/icons/icon-check.svg"
+                  alt=""
+                />
+                <h2 class="t-c-banner-silder-h09__title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="t-c-banner-silder-h09__txt__black">
+                  La transmisión es fundamental para la creación de un mercado
+                  de energía, al ser el punto de encuentro entre generación y la
+                  demanda, a través de ella, se logra el intercambio físico de
+                  la energía eléctrica y se optimiza el uso de los recursos de
+                  generación.
+                </p>
+                <p class="t-c-banner-silder-h09__txt__orange">
+                  Trabajamos para que cuando la energía eléctrica se genere
+                  pueda llegar a millones de personas en el continente.
+                </p>
+              </div>
+              <div
+                class="t-c-banner-silder-h09__column t-c-banner-silder-h09__columnTwo"
+              >
+                <div class="t-c-banner-silder-h09__column__img">
+                  <img
+                    src="https://www.isa.co/wp-content/uploads/2020/12/gal_ener_4.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="t-c-banner-silder-h09__description">Línea ISA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end  HU 09 -->
+
+    <!-- start  HU 11 -->
+    <section
+      class="t-c-Banner-tbi-h11 my-5"
+      style="background-color: var(--white-main)"
+    >
+      <div class="container d-flex">
+        <div
+          class="t-c-Banner-tbi-h11__column t-c-Banner-tbi-h11__columnOne py-5"
+        >
+          <h2 class="t-c-Banner-tbi-h11__title">
+            ASAMBLEA GENERAL DE ACCIONISTAS
+          </h2>
+          <div class="btn-isa color-V icon-after-V my-3">
+            <a href="#" title="txt para accesibilidad"> Ver más </a>
+          </div>
+        </div>
+        <div class="t-c-Banner-tbi-h11__column t-c-Banner-tbi-h11__columnTwo">
+          <a href="#" title="txt para accesibilidad ">
+            <img
+              src="https://www.isa.co/wp-content/uploads/2022/03/Interna-foto-1536x694.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end  HU 11 -->
+
+    <!-- start  HU 13 -->
+    <section class="t-c-banner-onda my-5">
+      <div class="principal-container">
+        <div class="container-md mx-auto">
+          <div class="t-c-banner-onda-box__txt">
+            <h2 class="t-c-banner-onda__title">TENEMOS MUCHO QUE CONTARTE</h2>
+            <p class="t-c-banner-onda__txt">
+              Encuentra información sobre nuestras acciones financieras, de
+              gobierno y demás actividades que garantizan un desarrollo
+              transparente e innovador de nuestros negocios. Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit. Donec posuere metus sit
+              amet tortor tempus, a tempus purus aliquam. Pellentesque habitant
+              morbi tristique senectus et netus et malesuada fames ac turpis
+              egestas. Integer dictum urna at leo pretium, vitae accumsan mi
+              pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et
+              ultrices posuere cubilia curae; In egestas libero ut luctus
+              hendrerit. Etiam orci sem, condimentum sed tortor et, ultricies
+              mattis ante. Sed convallis sapien a risus auctor, at sagittis
+              augue dictum. Nullam vitae tincidunt mi. Proin at erat quis massa
+              blandit cursus eu eget dolor. Donec in odio odio. Nullam interdum
+              turpis sed leo sodales euismod. Ut euismod feugiat nulla.
+            </p>
+            <div
+              class="t-c-banner-onda-box__btn my-5 btn-isa variant-orange icon-after-V"
+            >
+              <a href="#">Prensa</a>
+              <a href="#">Ver más</a>
+            </div>
+          </div>
+          <div class="container-banner">
+            <figure class="t-c-banner-onda__img">
+              <img
+                src="https://www.isa.co/wp-content/uploads/2020/12/top_gobierno.jpg"
+                alt=""
+              />
+            </figure>
+          </div>
+          <svg
+            class="t-c-banner-onda__onda"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1000 100"
+            preserveAspectRatio="none"
+          >
+            <path
+              class="elementor-shape-fill"
+              d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+                 c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+                c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- end  HU 13 -->
+    <!-- start  HU 15 -->
+
+    <section
+      class="t-c-socialproof my-5"
+      style="background-color: var(--white-main)"
+    >
+      <div class="container d-flex">
+        <div class="t-c-socialproof__box">
+          <h2 class="t-c-socialproof__titel title-V">Somos más</h2>
+          <span class="t-c-socialproof__txt paragraph-V txt_lg text_orange"
+            >200</span
+          >
+          <p class="txt_md text_blue paragraph-V">
+            colaboradores en la Costa Caribe colombiana
+          </p>
+        </div>
+        <div class="t-c-socialproof__box">
+          <h2 class="t-c-socialproof__titel title-V">
+            Nuestra infraestructura tiene presencia en
+          </h2>
+          <span class="t-c-socialproof__txt paragraph-V txt_lg text_orange"
+            >34
+          </span>
+          <p class="txt_md text_blue paragraph-V">municipios</p>
+        </div>
+        <div class="t-c-socialproof__box">
+          <h2 class="t-c-socialproof__titel title-V">
+            Operamos y mantenemos más de
+          </h2>
+          <span class="t-c-socialproof__txt paragraph-V txt_lg text_orange"
+            >1.500
+          </span>
+          <p class="txt_md text_blue paragraph-V">kilómetros de líneas y</p>
+          <p class="t-c-socialproof__txt-sm txt_sm paragraph-V text_orange">
+            20 subestaciones
+          </p>
+        </div>
+        <div class="t-c-socialproof__box">
+          <span class="t-c-socialproof__txt paragraph-V txt_lg text_orange"
+            >3.778
+          </span>
+          <p class="txt_md text_blue paragraph-V">
+            MVA y 79.5 MVAR Capacidad de transformación de Capacitivos
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- end  HU 15 -->
+
+    <!-- start  HU 17 -->
+    <section class="t-c-sbanner-r my-5">
+      <div class="container d-flex">
+        <div class="t-c-sbanner-r__box">
+          <figure>
+            <img src="images/hitos.png" alt="" />
+          </figure>
+          <h2 class="title-V dark-blue-V">Reconocimientos</h2>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="t-c-sbanner-r__box-content">
+              <div class="t-c-sbanner-r__box-text">
+                <p class="paragraph-V">
+                  Institucional Investigador reconoció a Bernando Vargas
+                  Gilbsone como unos de los mejores CEO en el 2019
+                </p>
+              </div>
+              <figure class="">
+                <img
+                  src="https://www.isa.co/wp-content/uploads/2020/12/slide1_negocios.jpg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item">
+            <div class="t-c-sbanner-r__box-content">
+              <div class="t-c-sbanner-r__box-text">
+                <p class="paragraph-V">
+                  Institucional Investigador reconoció a Bernando Vargas
+                  Gilbsone como unos de los mejores CEO en el 2019
+                </p>
+              </div>
+              <figure class="">
+                <img
+                  src="https://www.isa.co/wp-content/uploads/2020/12/slide1_negocios.jpg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end  HU 17 -->
+    <!-- HU 24 Formulario CONTACTENOS  -->
+    <section class="contact-V my-5">
+      <div class="contact-header container-fluid mb-5">
+        <h2>Formulario de contacto</h2>
+        <p>
+          Para establecer contacto con TRANSELCA S.A. E.S.P por favor llene los
+          datos solicitados en el siguiente formulario correspondientes a su
+          petición, reclamo o requerimiento.
+        </p>
+        <p>
+          <strong
+            >**Todos los campos de texto son obligatorios para el registro de su
+            solicitud**</strong
+          >
+        </p>
+      </div>
+      <form class="container form-float-V">
+        <fieldset>
+          <legend class="sr-only">Datos de contacto</legend>
+          <div class="form-row">
+            <div class="type-person-V form-group col-md-6">
+              <label for="type-person">Tipo de persona *</label>
+              <select id="type-person" class="form-control" required>
+                <option selected disabled>Seleccione un tipo de persona</option>
+                <option>Persona natural</option>
+                <option>Persona juridica</option>
+                <option>Menor de edad</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor, seleccione un tipo de persona
+              </div>
+            </div>
+            <div class="form-group col-md-6 d-none">
+              <label for="name-person">Nombre completo *</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name-person"
+                placeholder="Ingrese su nombre completo"
+              />
+              <div class="invalid-feedback">
+                Por favor, ingrese nombre completo
+              </div>
+            </div>
+            <div class="form-group col-md-6 d-none">
+              <label for="business-name">Razón Social *</label>
+              <input
+                type="text"
+                class="form-control"
+                id="business-name"
+                placeholder="Ingrese la Razón Social"
+              />
+              <div class="invalid-feedback">
+                Por favor, ingrese la Razón Social
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="type-document">Tipo de documento *</label>
+              <select id="type-document" class="form-control" required>
+                <option selected disabled>
+                  Seleccione un tipo de documento
+                </option>
+                <option>CC</option>
+                <option>CE</option>
+                <option>RC</option>
+                <option>TI</option>
+                <option>OTRO</option>
+                <option>NIT</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor, seleccione un tipo de documento
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="document">Número de documento *</label>
+              <input
+                type="number"
+                class="form-control"
+                id="document"
+                placeholder="Ingrese número de documento"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor, ingrese un número de documento
+              </div>
+            </div>
+          </div>
+          <div class="form-row applicant-V d-none">
+            <div class="form-group col-md-6">
+              <label for="applicant">Solicitante *</label>
+              <input
+                type="text"
+                class="form-control"
+                id="applicant"
+                placeholder="Ingrese el nombre del solicitante"
+              />
+              <div class="invalid-feedback">
+                Por favor, ingrese el nombre del solicitante
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="position-applicant">Cargo del Solicitante *</label>
+              <input
+                type="text"
+                class="form-control"
+                id="position-applicant"
+                placeholder="Ingrese cargo del solicitante"
+              />
+              <div class="invalid-feedback">
+                Por favor, ingrese el cargo del solicitante
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6 pais-V">
+              <label for="country">Pais *</label>
+              <select id="country" class="form-control" required>
+                <option selected disabled>Seleccione un País</option>
+                <option>Colombia</option>
+                <option>Otro país</option>
+              </select>
+              <div class="invalid-feedback">Por favor, seleccione un País</div>
+            </div>
+            <div class="form-group col-md-6 depart-V colombia-V d-none">
+              <label for="department-Col">Departamento *</label>
+              <select id="department-Col" class="form-control">
+                <option selected disabled>Seleccione un Departamento</option>
+                <option>Cundinamarca</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor, seleccione un Departamento
+              </div>
+            </div>
+            <div class="form-group col-md-6 depart-V">
+              <label for="department">Departamento *</label>
+              <input
+                type="text"
+                class="form-control"
+                id="department"
+                placeholder="Ingrese un Departamento"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor, ingrese un departamento
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6 city-V colombia-V d-none">
+              <label for="city-Col">Ciudad *</label>
+              <select id="city-Col" class="form-control">
+                <option selected disabled>Seleccione una ciudad</option>
+                <option>Bogota</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor, seleccione una Ciudad
+              </div>
+            </div>
+            <div class="form-group col-md-6 city-V">
+              <label for="city">Ciudad *</label>
+              <input
+                type="text"
+                class="form-control"
+                id="city"
+                placeholder="Ingrese una ciudad"
+                required
+              />
+              <div class="invalid-feedback">Por favor, ingrese una ciudad</div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="correspondence">Dirección de correspondencia *</label>
+              <input
+                type="text"
+                class="form-control"
+                id="correspondence"
+                placeholder="Ingrese su dirección de correspondencia"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor, ingrese una dirección de correspondencia
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="email">E - mail *</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Ingrese un correo electrónico"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor, ingrese un correo electrónico
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="tel">Teléfono o celular *</label>
+              <input
+                type="number"
+                class="form-control"
+                id="tel"
+                placeholder="Ingrese un número de teléfono o celular"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor, ingrese un número de teléfono o celular
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="sr-only">Datos de la solicitud</legend>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="type-request">Tipo de solicitud *</label>
+              <select id="type-request" class="form-control" required>
+                <option selected disabled>
+                  Seleccione un tipo de solicitud
+                </option>
+                <option>Sugerencia</option>
+                <option>Felicitación</option>
+                <option>Petición</option>
+                <option>Reclamo</option>
+                <option>Requerimiento</option>
+                <option>Información pública</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor, seleccione un tipo de solicitud
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="description">Descripción</label>
+              <textarea
+                class="form-control"
+                id="description"
+                rows="4"
+                required
+                placeholder="Escriba su descripción"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="files-contact-V">Adjuntar documentos</label>
+              <p>
+                Tiene la posibilidad de adjuntar un (1) archivo de máximo 10
+                Megas.
+              </p>
+              <div class="file-container-V">
+                <input
+                  type="file"
+                  class="form-control-file"
+                  id="files-contact-V"
+                />
+              </div>
+              <div class="uploaded-files-V"></div>
+            </div>
+          </div>
+          <p class="label-V">
+            Favor indicar a través de qué medio desea recibir la respuesta a
+            esta solicitud:
+          </p>
+          <div class="form-row contact-checks">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="medioDeRespuesta"
+                id="responseMedium1"
+                value="option1"
+                required
+                checked
+              />
+              <label class="form-check-label" for="responseMedium1"
+                >Correo electrónico</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="medioDeRespuesta"
+                id="responseMedium2"
+                value="option2"
+                required
+              />
+              <label class="form-check-label" for="responseMedium2"
+                >Dirección de correspondencia</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="medioDeRespuesta"
+                id="responseMedium3"
+                value="option3"
+                required
+              />
+              <label class="form-check-label" for="responseMedium3"
+                >Ambos medios</label
+              >
+            </div>
+          </div>
+        </fieldset>
+        <div class="captcha-V mx-auto mb-4">
+          <img src="./images/captcha.PNG" alt="capt" />
+        </div>
+        <fieldset>
+          <legend class="sr-only">Tratamiento de Datos Personales</legend>
+          <div class="form-row justify-content-center">
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="accept-terms"
+                required
+              />
+              <label class="form-check-label" for="accept-terms"
+                >Acepto Tratamiento de Datos Personales</label
+              >
+            </div>
+          </div>
+          <div class="form-row justify-content-center">
+            <a class="link-isa" href="#" target="_blank"
+              >Ver Política de Privacidad de TRANSELCA</a
+            >
+          </div>
+        </fieldset>
+        <div class="d-flex justify-content-center btn-isa mx-auto mt-4">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+      <!-- Modal -->
+      <div
+        class="modal fade modal-contact-V"
+        id="response-contact"
+        tabindex="-1"
+        aria-labelledby="label-state"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="modal-title sr-only" id="label-state"
+                >Estado de la solicitud</span
+              >
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Cerrar estado"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-response sent-response-V d-none">
+                <div class="logo-V mx-auto mb-3">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <p>Tu mensaje ha sido enviado correctamente</p>
+              </div>
+              <div class="modal-response error-response-V">
+                <div class="logo-V mx-auto mb-3">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <p>Su mensaje no fue enviado</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="btn-isa mx-auto">
+                <button title="Salir" type="button" data-dismiss="modal">
+                  Salir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HU 12 Página interna - Slider Banner políticas -->
+    <section style="background-color: white">
+      <div class="container mx-auto">
+        <h2 class="title-V underline-V">Políticas Corporativas</h2>
+        <p class="paragraph-V">
+          La Junta Directiva es la responsable de establecer, orientar y revisar
+          la estrategia corporativa, las directrices y las políticas, las cuales
+          se comunican por este sitio web y por los portales internos de
+          información destinados para cada grupo de interés y a través de las
+          redes de sinergia del Modelo de Trabajo de Grupo Empresarial.
+        </p>
+      </div>
+    </section>
+
+    <!--HU 25 Formulario ASUNTOS ETICOS -->
+    <section class="ethical-issues-V my-5">
+      <div class="contact-header container-fluid mb-5">
+        <h2>Asuntos eticos</h2>
+        <p>
+          Para establecer contacto con TRANSELCA S.A. por favor llene los datos
+          solicitados en el siguiente formulario.
+        </p>
+        <p>
+          Recuerde: Sus opiniones son de la mayor importancia para nosotros, ya
+          que nos proporciona la información necesaria para brindarle un
+          servicio cada vez mejor
+        </p>
+      </div>
+      <form class="container form-float-V">
+        <fieldset>
+          <legend class="sr-only">Datos de la solicitad</legend>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="asunto-e">Asunto *</label>
+              <input
+                type="text"
+                class="form-control"
+                id="asunto-e"
+                placeholder="Ingrese el asunto del mensaje"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor, escriba el asunto del mensaje
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="comentario-e">Comentario *</label>
+              <textarea
+                class="form-control"
+                id="comentario-e"
+                rows="4"
+                required
+                placeholder="Ingrese su comentario"
+              ></textarea>
+              <div class="invalid-feedback">
+                Por favor, escriba el comentario del mensaje
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="label-V mb-3">
+            Información de Contacto – Opcional
+          </legend>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="name-person-e">Nombre completo</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name-person-e"
+                placeholder="Ingrese su nombre completo"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4 pais-V">
+              <label for="country-e">Pais</label>
+              <select id="country-e" class="form-control">
+                <option selected disabled>Seleccione un País</option>
+                <option>Colombia</option>
+                <option>Otro país</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 depart-V">
+              <label for="department-e">Departamento</label>
+              <input
+                type="text"
+                class="form-control"
+                id="department-e"
+                placeholder="Ingrese un Departamento"
+              />
+            </div>
+            <div class="form-group col-md-4 depart-V colombia-V d-none">
+              <label for="department-e-Col">Departamento</label>
+              <select id="department-e-Col" class="form-control">
+                <option selected disabled>Seleccione un Departamento</option>
+                <option>Cundinamarca</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 city-V">
+              <label for="city-e">Ciudad</label>
+              <input
+                type="text"
+                class="form-control"
+                id="city-e"
+                placeholder="Ingrese una ciudad"
+              />
+            </div>
+            <div class="form-group col-md-4 city-V colombia-V d-none">
+              <label for="city-e-Col">Ciudad</label>
+              <select id="city-e-Col" class="form-control">
+                <option selected disabled>Seleccione una ciudad</option>
+                <option>Bogota</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="email-e">E - mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email-e"
+                placeholder="Ingrese un correo electrónico"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="tel-e">Teléfono o celular</label>
+              <input
+                type="number"
+                class="form-control"
+                id="tel-e"
+                placeholder="Ingrese un número de teléfono o celular"
+              />
+            </div>
+            <p class="form-info-V">
+              *La Información Suministrada es estrictamente confidencial
+            </p>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="sr-only">Tratamiento de Datos Personales</legend>
+          <div class="form-row justify-content-center">
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="accept-terms-e"
+                required
+              />
+              <label class="form-check-label" for="accept-terms-e"
+                >Acepto Tratamiento de Datos Personales</label
+              >
+            </div>
+          </div>
+          <div class="form-row justify-content-center mb-3">
+            <a class="link-isa" href="#" target="_blank"
+              >Ver Política de Privacidad de TRANSELCA</a
+            >
+          </div>
+        </fieldset>
+        <div class="captcha-V mx-auto mb-4">
+          <img src="./images/captcha.PNG" alt="capt" />
+        </div>
+        <div class="btn-isa mx-auto mt-4 d-flex justify-content-center">
+          <button type="submit" data-target="#response-ethical">Enviar</button>
+        </div>
+      </form>
+      <!-- Modal -->
+      <div
+        class="modal fade modal-ethical-V"
+        id="response-ethical"
+        tabindex="-1"
+        aria-labelledby="label-ethical-state"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="modal-title sr-only" id="label-ethical-state"
+                >Estado de la solicitud</span
+              >
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Cerrar estado"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-response sent-response-V">
+                <div class="logo-V mx-auto mb-3">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <p>Tu mensaje ha sido enviado correctamente</p>
+              </div>
+              <div class="modal-response error-response-V d-none">
+                <div class="logo-V mx-auto mb-3">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <p>Su mensaje no fue enviado</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="btn-isa mx-auto">
+                <button title="Salir" type="button" data-dismiss="modal">
+                  Salir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HU 10 Página interna - Banner reglamento de funcionamiento -->
+    <section class="simple-banner-V container-fluid">
+      <div class="simple-banner-container container mx-auto d-flex">
+        <div class="container-text container">
+          <h2 class="title-V underline-V">Reglamento de funcionamiento</h2>
+          <p class="paragraph-V">
+            Garantiza que la Asamblea General de Accionistas pueda logre sus
+            objetivos, facilita el debate y la toma de decisiones, bajo un marco
+            de respeto y participación. La Junta Directiva en sus facultades
+            legales y estatutarias a adoptado el reglamento de funcionamiento de
+            la Asamblea.
+          </p>
+          <div class="btn-isa btn-transparent-V color-V icon-after-V mb-3">
+            <a href="#" title="ir a Reglamento">Reglamento</a>
+          </div>
+          <div class="btn-isa icon-after-V">
+            <a href="#" title="ir a Gobierno Corporativo"
+              >Gobierno Corporativo</a
+            >
+          </div>
+        </div>
+        <div class="container-banner container d-flex">
+          <div class="mask-V my-auto">
+            <img src="./images/Asamblea.jpg" alt="banner" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HU 36 Página interna - Estructura de miga de pan  -->
+    <section class="miga-V">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#">Primer nivel</a>
+          </li>
+          <li>
+            <a href="#">Segundo nivel</a>
+          </li>
+          <li>Tercer nivel</li>
+        </ul>
+      </div>
+    </section>
+    <!-- HU 14 Página interna - Banner inicial con título, párrafo, botón centrado y circulo con 2 botones -->
+    <section class="big-banner-V">
+      <div class="principal-container">
+        <div class="container-md mx-auto">
+          <div class="container-content content-ball-active">
+            <h2 class="title-V underline-V white-V center-V mb-5">ISA</h2>
+            <p class="paragraph-V white-V bold-V text-center">
+              Después de más de cinco décadas de liderazgo en la región,
+              decidimos trascender el acto físico de conectar un punto con otro
+              para conectar personas, convirtiendo cada conexión en un acto
+              inspirador.
+            </p>
+            <p class="paragraph-V white-V bold-V text-center">
+              Hoy, ponemos 54 años de experiencia y conocimiento al servicio de
+              la sociedad, convencidos de que trabajando en conjunto lograremos
+              los cambios que queremos para el mundo.
+            </p>
+            <p class="paragraph-V white-V bold-V text-center">
+              Conoce lo que somos y lo que hacemos.
+            </p>
+            <div
+              class="btn-isa variant-orange icon-after-V mb-3 text-center d-flex justify-content-center"
+            >
+              <a href="#" title="ir a Presentación corporativa"
+                >Presentación corporativa</a
+              >
+            </div>
+          </div>
+          <div class="container-image">
+            <img src="./images/conexiones_inspiran.png" alt="imagen" />
+          </div>
+          <div class="container-banner">
+            <img src="./images/top_grupo_2.jpg" alt="banner" />
+          </div>
+        </div>
+      </div>
+      <div class="container-final-btns container-md mx-auto d-flex">
+        <div class="btn-isa btn-transparent-V icon-after-V color-V text-center">
+          <a href="#" title="ir a Nuestro manifiesto">Nuestro manifiesto</a>
+        </div>
+        <div class="btn-isa btn-transparent-V icon-after-V color-V text-center">
+          <a href="#" title="ir a Estrategia ISA 2030">Estrategia ISA 2030</a>
+        </div>
+      </div>
+    </section>
+    <!-- HU 16 Página interna - Slider banner Hitos -->
+    <section class="carousel-hitos-V" style="background-color: white">
+      <div class="container d-flex">
+        <div class="header-container">
+          <img src="./images/hitos-e1673624847540.png" alt="logo" />
+          <h2 class="title-V underline-V">HITOS Y RECONOCIMIENTOS</h2>
+        </div>
+        <div class="container-carousel">
+          <div class="owl-carousel owl-theme" id="t-js-carousel-hitos-V">
+            <div class="item" style="width: 330px; background-color: white">
+              <div class="item-container p-3">
+                <div class="item-header">
+                  <p class="title-item mb-2">ISA</p>
+                  <span class="country-item">Colombia</span>
+                </div>
+                <p class="mb-0 time-item">Oct 11, 2021</p>
+                <div class="mb-2">
+                  <p class="tags-item mb-0">Filial: <strong>ISA</strong></p>
+                  <p class="tags-item mb-0">Filial: <strong>ISA</strong></p>
+                </div>
+                <div>
+                  <p class="title-item">
+                    Grupo ISA gana cuatro premios Andesco a la sostenibilidad
+                    por sus destacadas prácticas empresariales
+                  </p>
+                  <p class="p-item mb-0">
+                    El Premio es un reconocimiento a las prácticas
+                    diferenciadoras implementadas por empresas y organizaciones
+                    públicas, privadas y comunitarias que aportan valor real a
+                    la construcción de país, desde una perspectiva de la
+                    sostenibilidad en los entornos laboral, de mercado, social,
+                    ambiental y de gobierno corporativo.
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div class="item-container p-3">
+                <p class="p-item mb-2">
+                  <span>Dado por: </span
+                  ><strong>Deals of the Year Awards 2021</strong>
+                </p>
+                <div class="d-flex"></div>
+              </div>
+            </div>
+            <div class="item" style="width: 330px; background-color: white">
+              <div class="item-container p-3">
+                <div class="item-header">
+                  <p class="title-item mb-2">ISA</p>
+                  <span class="country-item">Chile</span>
+                </div>
+                <p class="mb-0 time-item">Oct 11, 2021</p>
+                <div class="mb-2">
+                  <p class="tags-item mb-0">
+                    Filial: <strong>ISA INTERCHILE</strong>
+                  </p>
+                  <p class="tags-item mb-0">
+                    Categoría: <strong>Desempeño</strong>
+                  </p>
+                </div>
+                <div>
+                  <p class="title-item">
+                    ISA INTERVIAL recibe el premio Carlos Vial Espantoso 2020
+                  </p>
+                  <p class="p-item mb-0">
+                    El reconocimiento fue dado a nuestra filial por buenas
+                    prácticas hacia colaboradores en el contexto COVID-19.
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div class="item-container p-3">
+                <p class="p-item mb-2"><span>Dado por:</span></p>
+                <div class="d-flex">
+                  <img src="./images/Gov-Colombia.jpg" alt="logo" />
+                  <img src="./images/Gov-Colombia.jpg" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <!--
+                    <div class="item" style="width: 330px; background-color: white;">
+                        <div class="item-container p-3">
+                            <div class="item-header">
+                                <p class="title-item mb-2">ISA</p>
+                                <span class="country-item">Colombia</span>
+                            </div>
+                            <p class="mb-0 time-item">Oct 11, 2021</p>
+                            <div class="mb-2">
+                                <p class="tags-item mb-0">Filial: <strong>ISA</strong></p>
+                                <p class="tags-item mb-0">Filial: <strong>ISA</strong></p>
+                            </div>
+                            <div>
+                                <p class="title-item">
+                                    Grupo ISA gana cuatro premios Andesco a la sostenibilidad por sus destacadas prácticas empresariales
+                                </p>
+                                <p class="p-item mb-0">
+                                    El Premio es un reconocimiento a las prácticas diferenciadoras implementadas por empresas y organizaciones públicas, privadas y comunitarias que aportan valor real a la construcción de país, desde una perspectiva de la sostenibilidad en los entornos laboral, de mercado, social, ambiental y de gobierno corporativo.
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="item-container p-3">
+                            <p class="p-item mb-2"><span>Dado por: </span><strong>Deals of the Year Awards 2021</strong></p>
+                            <div class="d-flex">
+                                <img src="./images/Gov-Colombia.jpg" alt="logo">
+                                <img src="./images/Gov-Colombia.jpg" alt="logo">
+                            </div>
+                        </div>
+                    </div>-->
+            <div class="item" style="width: 330px; background-color: white">
+              <div class="item-container p-3">
+                <div class="item-header">
+                  <p class="title-item mb-2">ISA</p>
+                  <span class="country-item">Colombia</span>
+                </div>
+                <p class="mb-0 time-item">Oct 11, 2021</p>
+                <div class="mb-2">
+                  <p class="tags-item mb-0">Filial: <strong>ISA</strong></p>
+                  <p class="tags-item mb-0">Filial: <strong>ISA</strong></p>
+                </div>
+                <div>
+                  <p class="title-item">
+                    Grupo ISA gana cuatro premios Andesco a la sostenibilidad
+                    por sus destacadas prácticas empresariales
+                  </p>
+                  <p class="p-item mb-0">
+                    El Premio es un reconocimiento a las prácticas
+                    diferenciadoras implementadas por empresas y organizaciones
+                    públicas, privadas y comunitarias que aportan valor real a
+                    la construcción de país, desde una perspectiva de la
+                    sostenibilidad en los entornos laboral, de mercado, social,
+                    ambiental y de gobierno corporativo.
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div class="item-container p-3">
+                <p class="p-item mb-2">
+                  <span>Dado por: </span
+                  ><strong>Deals of the Year Awards 2021</strong>
+                </p>
+                <div class="d-flex"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HU 18 Página interna - Estructura de textos con segmento de descargas máximo 4 enlaces -->
+    <section class="download-4-V" style="background-color: white">
+      <div class="container d-flex align-items-center">
+        <div class="container-text pr-4">
+          <h2 class="title-V orange-V size-28-V">
+            ACTUAMOS CON CONVICCIÓN, DEMOSTRANDO QUE PODEMOS PROGRESAR Y SER
+            COMPETITIVOS EN EL NEGOCIO SIENDO ÉTICOS Y TRANSPARENTES.
+          </h2>
+          <p class="paragraph-V">
+            En ISA y nuestras empresas entendemos el gobierno corporativo como
+            el conjunto de valores, principios, políticas, reglas, prácticas y
+            procesos por medio de los cuales somos dirigidos.
+          </p>
+          <p class="paragraph-V">
+            Este es el eje que nos permite buscar la eficiencia empresarial,
+            potenciar el crecimiento y fomentar la confianza de nuestros
+            inversionistas en contextos nacionales e internacionales por medio
+            de prácticas orientadas a la transparencia y coherencia, siempre
+            buscando el respeto de quienes invierten en nuestra compañía y el
+            cumplimiento de los compromisos con nuestros grupos de interés.
+          </p>
+        </div>
+        <div class="container-download" style="background-color: white">
+          <div class="mask-V">
+            <img src="./images/ico_descarga.png" alt="descargas" />
+          </div>
+          <p class="title-V orange-V size-22-V">Descarga</p>
+          <p class="paragraph-V mb-1">
+            Consulte las principales normas del Sistema de Gobierno Corporativo.
+          </p>
+          <div
+            class="btn-isa btn-transparent-V color-V w-100 icon-after-V my-3"
+          >
+            <a href="#" title="ir a Estatutos sociales">Estatutos sociales </a>
+          </div>
+          <div
+            class="btn-isa btn-transparent-V color-V w-100 icon-after-V my-3"
+          >
+            <a href="#" title="ir a Este es un test para un boton muy largo"
+              >Este es un test para un boton muy largo
+            </a>
+          </div>
+          <div
+            class="btn-isa btn-transparent-V color-V w-100 icon-after-V my-3"
+          >
+            <a href="#" title="ir a Estatutos sociales">Estatutos sociales </a>
+          </div>
+          <div class="btn-isa w-100 icon-after-V mt-3">
+            <a
+              class="btn-isa w-100 icon-after-V mt-3"
+              href="#"
+              title="ir a Ver más"
+              >Ver más</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HU 19 Página interna - Estructura de textos con segmento de descargas por año -->
+    <section class="download-age-V" style="background-color: white">
+      <div class="container d-flex align-items-center">
+        <div class="container-text pr-4">
+          <h2 class="title-V underline-V">ENCUESTA CÓDIGO PAÍS</h2>
+          <p class="paragraph-V">
+            Apoyamos firmemente las iniciativas que buscan fortalecer las buenas
+            prácticas de Buen Gobierno, como la encuesta Código País.
+          </p>
+        </div>
+        <div class="container-download" style="background-color: white">
+          <div class="box-download">
+            <div class="mask-V">
+              <img src="./images/logo_energia.png" alt="descargas" />
+            </div>
+            <p class="title-V orange-V size-22-V">Descarga</p>
+          </div>
+
+          <div class="container-links d-flex">
+            <div class="btn-isa my-2">
+              <a href="#" title="ir a 0000">0000</a>
+            </div>
+            <div class="btn-isa my-2">
+              <a href="#" title="ir a 1111">1111</a>
+            </div>
+            <div class="btn-isa my-2">
+              <a href="#" title="ir a 9999">9999</a>
+            </div>
+            <div class="btn-isa my-2">
+              <a href="#" title="ir a 0000">0000</a>
+            </div>
+            <div class="btn-isa my-2">
+              <a href="#" title="ir a 1111">1111</a>
+            </div>
+            <div class="btn-isa my-2">
+              <a href="#" title="ir a 9999">9999</a>
+            </div>
+            <div class="btn-isa my-2">
+              <a href="#" title="ir a 9999">9999</a>
+            </div>
+            <div class="btn-isa my-2">
+              <a href="#" title="ir a 9999">9999</a>
+            </div>
+            <div class="btn-isa my-2">
+              <a href="#" title="ir a 9999">9999</a>
+            </div>
+            <div class="btn-isa my-2">
+              <a href="#" title="ir a 9999">9999</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HU 20 Página interna - Centro de descargas 1 -->
+    <section class="download-center-V" style="background-color: white">
+      <div class="container">
+        <div class="mask-V">
+          <img src="./images/ico_descarga.png" alt="descargas" />
+        </div>
+        <h2 class="title-V underline-V">CENTRO DE DESCARGAS</h2>
+        <div
+          class="container-content d-flex p-3"
+          style="background-color: white"
+        >
+          <div class="container-text">
+            <p class="title-V orange-V size-28-V">Estatutos sociales</p>
+            <p class="paragraph-V">
+              Fueron modificados y aprobados por última vez el 29 de marzo de
+              2019, mediante Escritura Pública 1175.
+            </p>
+          </div>
+          <div class="container-link">
+            <div
+              class="btn-isa btn-transparent-V color-V w-100 icon-after-V my-3"
+            >
+              <a href="#" title="ir a Estatutos sociales">Estatutos sociales</a>
+            </div>
+            <div
+              class="btn-isa btn-transparent-V color-V w-100 icon-after-V my-3"
+            >
+              <a
+                href="#"
+                title="ir a Certificado de Existencia y Representación Legal de ISA"
+                >Certificado de Existencia y Representación Legal de ISA</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HU 21 Página interna - Centro de descargas 2 -->
+    <section
+      class="download-center-V variant-V"
+      style="background-color: white"
+    >
+      <div class="container">
+        <div class="header-content">
+          <div class="mask-V">
+            <img src="./images/ico_descarga.png" alt="descargas" />
+          </div>
+          <h2 class="title-V underline-V">CENTRO DE DESCARGAS</h2>
+          <p class="paragraph-V">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, iste
+            deserunt quasi alias cupiditate, voluptatem ex quos corrupti ipsum
+            harum quo culpa laboriosam suscipit nobis aliquam amet soluta quod
+            id?
+          </p>
+        </div>
+        <div
+          class="container-content d-flex p-3"
+          style="background-color: white"
+        >
+          <div class="box-download">
+            <div class="mask-V">
+              <img src="./images/ico_descarga.png" alt="descargas" />
+            </div>
+            <p class="title-V orange-V size-22-V">Descarga</p>
+          </div>
+          <div class="container-link">
+            <div
+              class="btn-isa btn-transparent-V color-V mx-2 icon-after-V my-2"
+            >
+              <a href="#" title="ir a Estatutos sociales">Estatutos sociales</a>
+            </div>
+            <div
+              class="btn-isa btn-transparent-V color-V mx-2 icon-after-V my-2"
+            >
+              <a href="#" title="ir a Estatutos sociales">Estatutos sociales</a>
+            </div>
+            <div
+              class="btn-isa btn-transparent-V color-V mx-2 icon-after-V my-2"
+            >
+              <a href="#" title="ir a Estatutos sociales">Estatutos sociales</a>
+            </div>
+            <div
+              class="btn-isa btn-transparent-V color-V mx-2 icon-after-V my-2"
+            >
+              <a href="#" title="ir a Estatutos sociales">Estatutos sociales</a>
+            </div>
+            <div
+              class="btn-isa btn-transparent-V color-V mx-2 icon-after-V my-2"
+            >
+              <a
+                href="#"
+                title="ir a Certificado de Existencia y Representación Legal de ISA"
+                >Certificado de Existencia y Representación Legal de ISA</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HU 22 Página interna - Listado en tabla para descargas -->
+    <section class="download-list-V" style="background-color: white">
+      <div class="container">
+        <div class="container-text pr-4">
+          <h2 class="title-V underline-V">Informes</h2>
+        </div>
+        <div class="container-download" style="background-color: white">
+          <div class="mask-V">
+            <img src="./images/ico_descarga.png" alt="descargas" />
+          </div>
+          <p class="title-V orange-V size-22-V">Informes gestion</p>
+          <div
+            class="btn-isa btn-transparent-V color-V w-100 icon-after-V my-3"
+          >
+            <a href="#" title="ir a Estatutos sociales">Estatutos sociales </a>
+          </div>
+          <div
+            class="btn-isa btn-transparent-V color-V w-100 icon-after-V my-3"
+          >
+            <a href="#" title="ir a Este es un test para un boton muy largo"
+              >Este es un test para un boton muy largo
+            </a>
+          </div>
+          <div
+            class="btn-isa btn-transparent-V color-V w-100 icon-after-V my-3"
+          >
+            <a href="#" title="ir a Estatutos sociales">Estatutos sociales </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HU 23 Página interna - Banner de texto e imagen -->
+    <section class="banner-rich-V">
+      <div class="container d-flex">
+        <div class="rich-container">
+          <h2>Texto de pruebas h2</h2>
+          <h2 class="rich-title-V">Texto de pruebas h2</h2>
+          <h2 class="rich-title-V underline-V">Texto de pruebas h2</h2>
+          <h2 class="rich-title-V orange-V">Texto de pruebas h2</h2>
+          <h3>Texto de pruebas h3</h3>
+          <h4>Texto de pruebas h4</h4>
+          <h5>Texto de pruebas h5</h5>
+          <h6>Texto de pruebas h6</h6>
+          <p>
+            Texto de pruebas <strong>Texto de pruebas</strong>
+            <a href="#">link test</a>
+          </p>
+          <ul>
+            <li>Texto de pruebas</li>
+            <li>Texto de pruebas</li>
+          </ul>
+          <ol>
+            <li>Texto de pruebas</li>
+            <li>Texto de pruebas</li>
+          </ol>
+          <div>
+            <a href="#">link test</a>
+          </div>
+          <div class="btn-isa btn-transparent-V color-V mb-2">
+            <a href="#">test boton</a>
+          </div>
+        </div>
+        <div class="banner-container">
+          <img src="./images/banner rich.jpeg" alt="banner" />
+        </div>
+      </div>
+    </section>
+    <!-- HU 26 Página interna - Banner comunícate con nosotros -->
+    <section class="banner-communicate">
+      <div class="container">
+        <div class="title-container pl-3 pt-4">
+          <h2 class="title-V underline-V">COMUNÍCATE CON NOSOTROS</h2>
+        </div>
+        <div class="container-content d-flex">
+          <div class="section-1 d-flex align-items-center">
+            <div class="mask-V">
+              <img src="./images/contactenos.png" alt="banner" />
+            </div>
+            <div class="container-text px-4">
+              <p class="title-V blue-V size-28-V text-right">CONTÁCTANOS</p>
+              <div class="btn-isa icon-after-V d-flex justify-content-end">
+                <a href="#" title="ir a Ver medios de contacto"
+                  >Ver medios de contacto</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="section-2 px-4">
+            <div class="mask-V">
+              <img src="./images/linea_etica.png" alt="linea" />
+            </div>
+          </div>
+          <div class="section-3 p-3">
+            <p class="title-V blue-V size-28-V">LÍNEA ÉTICA</p>
+            <p class="paragraph-V">
+              Como parte del monitoreo al cumplimiento de nuestro Programa
+              Empresarial de Ética y Compliance, disponemos la Línea Ética, a
+              través de la cual los grupos de interés pueden reportar el
+              incumplimiento de lo que establece este programa, particularmente
+              en lo relacionado con fraude, corrupción, soborno, lavado de
+              activos y financiación del terrorismo.
+            </p>
+
+            <div class="d-flex item-row-flex">
+              <ul class="p-0">
+                <li class="pr-2 d-flex">
+                  <div class="d-flex">
+                    <img src="./images/icons/phone.svg" alt="icono telefono" />
+                    <span class="paragraph-V">LÍNEA ÉTICA GRATUITA:</span>
+                  </div>
+                  <p>01 8000 94 13 41</p>
+                </li>
+              </ul>
+              <ul class="p-0">
+                <li class="pr-2 d-flex">
+                  <div class="d-flex">
+                    <img src="./images/icons/phone.svg" alt="icono telefono" />
+                    <span class="paragraph-V">EMAIL:</span>
+                  </div>
+                  <div>
+                    <a href="#" title="ir a lineaetica@isa.com.co">
+                      lineaetica@isa.com.co
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="btn-isa icon-after-V">
+              <a href="#" title="ir a Ver más">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HU 27 Página interna - Galería presentación miembros de junta -->
+    <section class="members-galery-V">
+      <div class="container">
+        <h2 class="title-V underline-V">MIEMBROS</h2>
+        <div class="container-grid d-flex">
+          <div class="item">
+            <div class="d-flex">
+              <div class="mask-V">
+                <img src="./images/JD-SitioWeb-02.png" alt="persona" />
+              </div>
+              <div
+                class="container-text d-flex flex-column justify-content-center px-2"
+              >
+                <p class="title-V orange-V size-20-V mb-1">CAMILO ZEA GÓMEZ</p>
+                <p class="paragraph-V mb-1"><strong>Nominado por:</strong></p>
+                <p class="paragraph-V mb-0">Fondos de Pensiones y Cesantías</p>
+              </div>
+            </div>
+            <div class="footer-container">
+              <ul>
+                <li class="paragraph-V blue-V">Miembro independiente</li>
+                <li class="paragraph-V blue-V">
+                  Comité de Auditoría y Riesgos
+                </li>
+                <li class="paragraph-V blue-V">
+                  Comité de Gobierno Corporativo, Sostenibilidad, Tecnología e
+                  Innovación
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="d-flex">
+              <div class="mask-V">
+                <img src="./images/JD-SitioWeb-02.png" alt="persona" />
+              </div>
+              <div
+                class="container-text d-flex flex-column justify-content-center px-2"
+              >
+                <p class="title-V orange-V size-20-V mb-1">CAMILO ZEA GÓMEZ</p>
+                <p class="paragraph-V mb-1"><strong>Nominado por:</strong></p>
+                <p class="paragraph-V mb-0">Fondos de Pensiones y Cesantías</p>
+              </div>
+            </div>
+            <div class="footer-container">
+              <ul>
+                <li class="paragraph-V blue-V">Miembro independiente</li>
+                <li class="paragraph-V blue-V">
+                  Comité de Auditoría y Riesgos
+                </li>
+                <li class="paragraph-V blue-V">
+                  Comité de Gobierno Corporativo, Sostenibilidad, Tecnología e
+                  Innovación
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="d-flex">
+              <div class="mask-V">
+                <img src="./images/JD-SitioWeb-02.png" alt="persona" />
+              </div>
+              <div
+                class="container-text d-flex flex-column justify-content-center px-2"
+              >
+                <p class="title-V orange-V size-20-V mb-1">CAMILO ZEA GÓMEZ</p>
+                <p class="paragraph-V mb-1"><strong>Nominado por:</strong></p>
+                <p class="paragraph-V mb-0">Fondos de Pensiones y Cesantías</p>
+              </div>
+            </div>
+            <div class="footer-container">
+              <ul>
+                <li class="paragraph-V blue-V">Miembro independiente</li>
+                <li class="paragraph-V blue-V">
+                  Comité de Auditoría y Riesgos
+                </li>
+                <li class="paragraph-V blue-V">
+                  Comité de Gobierno Corporativo, Sostenibilidad, Tecnología e
+                  Innovación
+                </li>
+              </ul>
+              <div
+                class="btn-isa btn-transparent-V color-V icon-after-V mr-auto ml-3 mb-3"
+              >
+                <a href="#">Hoja de vida</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="d-flex">
+              <div class="mask-V">
+                <img src="./images/JD-SitioWeb-02.png" alt="persona" />
+              </div>
+              <div
+                class="container-text d-flex flex-column justify-content-center px-2"
+              >
+                <p class="title-V orange-V size-20-V mb-1">CAMILO ZEA GÓMEZ</p>
+                <p class="paragraph-V mb-1"><strong>Nominado por:</strong></p>
+                <p class="paragraph-V mb-0">Fondos de Pensiones y Cesantías</p>
+              </div>
+            </div>
+            <div class="footer-container">
+              <ul>
+                <li class="paragraph-V blue-V">Miembro independiente</li>
+                <li class="paragraph-V blue-V">
+                  Comité de Auditoría y Riesgos
+                </li>
+                <li class="paragraph-V blue-V">
+                  Comité de Gobierno Corporativo, Sostenibilidad, Tecnología e
+                  Innovación
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="d-flex">
+              <div class="mask-V">
+                <img src="./images/JD-SitioWeb-02.png" alt="persona" />
+              </div>
+              <div
+                class="container-text d-flex flex-column justify-content-center px-2"
+              >
+                <p class="title-V orange-V size-20-V mb-1">CAMILO ZEA GÓMEZ</p>
+                <p class="paragraph-V mb-1"><strong>Nominado por:</strong></p>
+                <p class="paragraph-V mb-0">Fondos de Pensiones y Cesantías</p>
+              </div>
+            </div>
+            <div class="footer-container">
+              <ul>
+                <li class="paragraph-V blue-V">Miembro independiente</li>
+                <li class="paragraph-V blue-V">
+                  Comité de Auditoría y Riesgos
+                </li>
+                <li class="paragraph-V blue-V">
+                  Comité de Gobierno Corporativo, Sostenibilidad, Tecnología e
+                  Innovación
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="d-flex">
+              <div class="mask-V">
+                <img src="./images/JD-SitioWeb-02.png" alt="persona" />
+              </div>
+              <div
+                class="container-text d-flex flex-column justify-content-center px-2"
+              >
+                <p class="title-V orange-V size-20-V mb-1">CAMILO ZEA GÓMEZ</p>
+                <p class="paragraph-V mb-1"><strong>Nominado por:</strong></p>
+                <p class="paragraph-V mb-0">Fondos de Pensiones y Cesantías</p>
+              </div>
+            </div>
+            <div class="footer-container">
+              <ul>
+                <li class="paragraph-V blue-V">Miembro independiente</li>
+                <li class="paragraph-V blue-V">
+                  Comité de Auditoría y Riesgos
+                </li>
+                <li class="paragraph-V blue-V">
+                  Comité de Gobierno Corporativo, Sostenibilidad, Tecnología e
+                  Innovación
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <p>
+            Miembros Independientes, conforme a lo dispuesto en la Ley 964 de
+            2005 y en los Estatutos Sociales.
+          </p>
+          <div class="btn-isa btn-transparent-V color-V icon-after-V">
+            <a href="#"> Ver hoja de vida de nuestros miembros </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HU 28 Página interna - Banner informativo -->
+    <section class="info-banner-V" style="background-color: white">
+      <div class="container">
+        <div class="section-1 d-flex row align-items-center mb-3">
+          <div class="text-container col-lg-3">
+            <p class="title-V orange-V mb-0 size-45-V">12 JUNTAS</p>
+            <p class="title-V underline-V size-22-V">REALIZADAS AL AÑO</p>
+          </div>
+          <div class="content-container col-lg-9">
+            <div class="row">
+              <div class="item col-lg-4 mb-3">
+                <div
+                  class="item-content d-flex align-items-center flex-column justify-content-center mx-auto"
+                >
+                  <p class="title-V orange-V mb-0 text-center">100%</p>
+                  <p class="title-V size-20-V mb-0 text-center">
+                    Miembros independientes
+                  </p>
+                </div>
+              </div>
+              <div class="item col-lg-4 mb-3">
+                <div
+                  class="item-content d-flex align-items-center flex-column justify-content-center mx-auto"
+                >
+                  <p class="title-V orange-V mb-0 text-center">100%</p>
+                  <p class="title-V size-20-V mb-0 text-center">
+                    Miembros independientes
+                  </p>
+                </div>
+              </div>
+              <div class="item col-lg-4 mb-3">
+                <div
+                  class="item-content d-flex align-items-center flex-column justify-content-center mx-auto"
+                >
+                  <p class="title-V orange-V mb-0 text-center">100%</p>
+                  <p class="title-V size-20-V mb-0 text-center">
+                    Miembros independientes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-2 d-flex row align-items-center">
+          <div class="content-container col-lg-7">
+            <p class="title-V underline-V">REMUNERACIÓN JUNTA DIRECTIVA</p>
+            <p class="paragraph-V">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
+              perferendis aperiam, nisi illum ullam et sunt ipsa molestiae
+              recusandae unde praesentium fugiat fugit blanditiis ab, eligendi
+              reprehenderit accusamus ea. Ducimus?
+            </p>
+          </div>
+          <div class="text-container col-lg-5">
+            <p class="title-V orange-V mb-0 size-45-V">$4.832.070</p>
+            <p class="title-V underline-V size-18-V">POR SESION ASISTIDA</p>
+          </div>
+        </div>
+      </div>
+      <figure class="t-c-banner-info__line">
+        <img src="images/linea_naranja-1024x161-removebg-preview.png" alt="" />
+      </figure>
+    </section>
+    <!-- HU 29 Proyectos - Galería presentación proyectos públicos -->
+    <section class="projects-V" style="background-color: white">
+      <div class="container">
+        <div class="header-content-V">
+          <h2 class="title-V underline-V">Tambien te puede interesar</h2>
+        </div>
+        <div class="container-content">
+          <table id="galery" class="display">
+            <thead class="d-none">
+              <tr>
+                <th>name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="card-double">
+                    <div class="card-V">
+                      <div class="mask-V">
+                        <img
+                          src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                          alt="banner"
+                        />
+                      </div>
+                      <div class="container-text">
+                        <p>Este es un titulo de ejemplos</p>
+                      </div>
+                    </div>
+                    <div
+                      class="card-reverse-V"
+                      style="background-color: var(--dark-blue-50)"
+                    >
+                      <div class="container-text">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Excepturi in doloribus aliquid nihil? Nobis sit
+                          quos architecto maiores reprehenderit nemo, iste
+                          libero modi. Velit, accusamus. Rerum architecto
+                          aspernatur commodi non?
+                        </p>
+                      </div>
+                      <div class="container-footer">
+                        <p>Estado: Activo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="card-double">
+                    <div class="card-V">
+                      <div class="mask-V">
+                        <img
+                          src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                          alt="banner"
+                        />
+                      </div>
+                      <div class="container-text">
+                        <p>Este es un titulo de ejemplos</p>
+                      </div>
+                    </div>
+                    <div
+                      class="card-reverse-V"
+                      style="background-color: var(--dark-blue-50)"
+                    >
+                      <div class="container-text">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Excepturi in doloribus aliquid nihil? Nobis sit
+                          quos architecto maiores reprehenderit nemo, iste
+                          libero modi. Velit, accusamus. Rerum architecto
+                          aspernatur commodi non?
+                        </p>
+                      </div>
+                      <div class="container-footer">
+                        <p>Estado: Activo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="card-double">
+                    <div class="card-V">
+                      <div class="mask-V">
+                        <img
+                          src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                          alt="banner"
+                        />
+                      </div>
+                      <div class="container-text">
+                        <p>Este es un titulo de ejemplos</p>
+                      </div>
+                    </div>
+                    <div
+                      class="card-reverse-V"
+                      style="background-color: var(--dark-blue-50)"
+                    >
+                      <div class="container-text">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Excepturi in doloribus aliquid nihil? Nobis sit
+                          quos architecto maiores reprehenderit nemo, iste
+                          libero modi. Velit, accusamus. Rerum architecto
+                          aspernatur commodi non?
+                        </p>
+                      </div>
+                      <div class="container-footer">
+                        <p>Estado: Activo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="card-double">
+                    <div class="card-V">
+                      <div class="mask-V">
+                        <img
+                          src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                          alt="banner"
+                        />
+                      </div>
+                      <div class="container-text">
+                        <p>Este es un titulo de ejemplos</p>
+                      </div>
+                    </div>
+                    <div
+                      class="card-reverse-V"
+                      style="background-color: var(--dark-blue-50)"
+                    >
+                      <div class="container-text">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Excepturi in doloribus aliquid nihil? Nobis sit
+                          quos architecto maiores reprehenderit nemo, iste
+                          libero modi. Velit, accusamus. Rerum architecto
+                          aspernatur commodi non?
+                        </p>
+                      </div>
+                      <div class="container-footer">
+                        <p>Estado: Activo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="card-double">
+                    <div class="card-V">
+                      <div class="mask-V">
+                        <img
+                          src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                          alt="banner"
+                        />
+                      </div>
+                      <div class="container-text">
+                        <p>Este es un titulo de ejemplos</p>
+                      </div>
+                    </div>
+                    <div
+                      class="card-reverse-V"
+                      style="background-color: var(--dark-blue-50)"
+                    >
+                      <div class="container-text">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Excepturi in doloribus aliquid nihil? Nobis sit
+                          quos architecto maiores reprehenderit nemo, iste
+                          libero modi. Velit, accusamus. Rerum architecto
+                          aspernatur commodi non?
+                        </p>
+                      </div>
+                      <div class="container-footer">
+                        <p>Estado: Activo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="card-double">
+                    <div class="card-V">
+                      <div class="mask-V">
+                        <img
+                          src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                          alt="banner"
+                        />
+                      </div>
+                      <div class="container-text">
+                        <p>Este es un titulo de ejemplos</p>
+                      </div>
+                    </div>
+                    <div
+                      class="card-reverse-V"
+                      style="background-color: var(--dark-blue-50)"
+                    >
+                      <div class="container-text">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Excepturi in doloribus aliquid nihil? Nobis sit
+                          quos architecto maiores reprehenderit nemo, iste
+                          libero modi. Velit, accusamus. Rerum architecto
+                          aspernatur commodi non?
+                        </p>
+                      </div>
+                      <div class="container-footer">
+                        <p>Estado: Activo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="card-double">
+                    <div class="card-V">
+                      <div class="mask-V">
+                        <img
+                          src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                          alt="banner"
+                        />
+                      </div>
+                      <div class="container-text">
+                        <p>Este es un titulo de ejemplos</p>
+                      </div>
+                    </div>
+                    <div
+                      class="card-reverse-V"
+                      style="background-color: var(--dark-blue-50)"
+                    >
+                      <div class="container-text">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Excepturi in doloribus aliquid nihil? Nobis sit
+                          quos architecto maiores reprehenderit nemo, iste
+                          libero modi. Velit, accusamus. Rerum architecto
+                          aspernatur commodi non?
+                        </p>
+                      </div>
+                      <div class="container-footer">
+                        <p>Estado: Activo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="card-double">
+                    <div class="card-V">
+                      <div class="mask-V">
+                        <img
+                          src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                          alt="banner"
+                        />
+                      </div>
+                      <div class="container-text">
+                        <p>Este es un titulo de ejemplos</p>
+                      </div>
+                    </div>
+                    <div
+                      class="card-reverse-V"
+                      style="background-color: var(--dark-blue-50)"
+                    >
+                      <div class="container-text">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Excepturi in doloribus aliquid nihil? Nobis sit
+                          quos architecto maiores reprehenderit nemo, iste
+                          libero modi. Velit, accusamus. Rerum architecto
+                          aspernatur commodi non?
+                        </p>
+                      </div>
+                      <div class="container-footer">
+                        <p>Estado: Activo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- HU 30 Sala de prensa - Home Sala de Prensa banner -->
+    <section class="prensa-V">
+      <div class="container">
+        <div class="header-content mb-3">
+          <h2 class="title-V underline-V">PRENSA</h2>
+          <p class="paragraph-V mb-0">Ultimo comunicado</p>
+        </div>
+        <div class="container-content d-flex">
+          <div class="mask-V">
+            <a href="#" title="ir a ver más">
+              <img
+                src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                alt="banner"
+              />
+            </a>
+          </div>
+          <div class="text-container d-flex flex-column">
+            <div class="box-category d-flex">
+              <span class="category-V mb-3">Categoria</span>
+              <span class="category-V mb-3">Categoria</span>
+              <span class="category-V mb-3">Categoria</span>
+            </div>
+
+            <div class="title-V size-20-V mb-3">
+              <a
+                href="#"
+                title="ir a ISA y Rockstart lanzan el primer programa de aceleración para startups de energía en Latinoamérica"
+                >ISA y Rockstart lanzan el primer programa de aceleración para
+                startups de energía en Latinoamérica</a
+              >
+            </div>
+            <span class="time-V mb-2">Nov 17, 2022</span>
+            <p class="paragraph-V">
+              Ambas compañías se unen para impulsar este programa que busca
+              encontrar soluciones a los desafíos que trae la transición
+              energética y fortalecer el ecosistema de emprendimiento en el
+              sector de […]
+            </p>
+            <div class="btn-isa btn-transparent-V icon-after-V color-V">
+              <a href="#" title="ir a ver más">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HU 31 Sala de prensa - Home Sala de Prensa galería de artículos -->
+    <section class="home-prensa-V">
+      <div class="container">
+        <div class="d-flex home-prensa-V__title">
+          <h2 class="title-V">COMUNICADOS DE PRENSA</h2>
+          <div class="btn-isa icon-after-V">
+            <a href="#" title="ir a Ver más">Ver todos</a>
+          </div>
+        </div>
+
+        <div class="container-content">
+          <table id="com-prensa" class="display">
+            <thead class="d-none">
+              <tr>
+                <th>name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div
+                    class="card-prensa"
+                    style="background-color: var(--white-main)"
+                    style="background-color: var(--white-main)"
+                  >
+                    <a class="mask-V" href="#" title="ir a Ver más">
+                      <img
+                        src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                        alt="banner"
+                      />
+                    </a>
+
+                    <div class="card-text p-3">
+                      <div class="title-card-prensa">
+                        <a
+                          href="#"
+                          title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                        >
+                          RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                          DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                          DE LA PROSPERIDAD
+                        </a>
+                      </div>
+                      <span class="time-prensa">diciembre 3, 2021</span>
+                      <p class="paragraph-V size-14-V">
+                        El proyecto que tiene una longitud de 146 kilómetros
+                        entre los departamentos de Bolívar y Atlántico contempló
+                        una inversión de COP 1.64 billones. Con la puesta en
+                        servicio de este
+                      </p>
+                      <div class="btn-isa icon-after-V">
+                        <a href="#" title="ir a Ver más">Ver más</a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="card-prensa"
+                    style="background-color: var(--white-main)"
+                    style="background-color: var(--white-main)"
+                  >
+                    <a class="mask-V" href="#" title="ir a Ver más">
+                      <img
+                        src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                        alt="banner"
+                      />
+                    </a>
+
+                    <div class="card-box-tags d-flex">
+                      <span class="tag-card-prensa">
+                        <a title="ir a la etiqueta 1 " href="">
+                          Nueva categoria creada para filtrar contenido
+                        </a>
+                      </span>
+                      <span class="tag-card-prensa">
+                        <a title="ir a la etiqueta 2 " href="">
+                          Nueva categoria
+                        </a>
+                      </span>
+                      <span class="tag-card-prensa">
+                        <a title="ir a la etiqueta 2 " href="">
+                          para filtrar contenido
+                        </a>
+                      </span>
+                      <span class="tag-card-prensa">
+                        <a title="ir a la etiqueta 2 " href="">
+                          creada prueba
+                        </a>
+                      </span>
+                    </div>
+                    <div class="card-text p-3">
+                      <div class="title-card-prensa">
+                        <a
+                          href="#"
+                          title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                        >
+                          RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                          DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                          DE LA PROSPERIDAD
+                        </a>
+                      </div>
+                      <span class="time-prensa">diciembre 3, 2021</span>
+                      <p class="paragraph-V size-14-V">
+                        El proyecto que tiene una longitud de 146 kilómetros
+                        entre los departamentos de Bolívar y Atlántico contempló
+                        una inversión de COP 1.64 billones. Con la puesta en
+                        servicio de este
+                      </p>
+                      <div class="btn-isa icon-after-V">
+                        <a href="#" title="ir a Ver más">Ver más</a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="card-prensa"
+                    style="background-color: var(--white-main)"
+                    style="background-color: var(--white-main)"
+                  >
+                    <a class="mask-V" href="#" title="ir a Ver más">
+                      <img
+                        src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                        alt="banner"
+                      />
+                    </a>
+                    <div class="card-text p-3">
+                      <div class="title-card-prensa">
+                        <a
+                          href="#"
+                          title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                        >
+                          RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                          DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                          DE LA PROSPERIDAD
+                        </a>
+                      </div>
+                      <span class="time-prensa">diciembre 3, 2021</span>
+                      <p class="paragraph-V size-14-V">
+                        El proyecto que tiene una longitud de 146 kilómetros
+                        entre los departamentos de Bolívar y Atlántico contempló
+                        una inversión de COP 1.64 billones. Con la puesta en
+                        servicio de este
+                      </p>
+                      <div class="btn-isa icon-after-V">
+                        <a href="#" title="ir a Ver más">Ver más</a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="card-prensa"
+                    style="background-color: var(--white-main)"
+                    style="background-color: var(--white-main)"
+                  >
+                    <a class="mask-V" href="#" title="ir a Ver más">
+                      <img
+                        src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                        alt="banner"
+                      />
+                    </a>
+                    <div class="card-box-tags d-flex">
+                      <span class="tag-card-prensa">
+                        <a title="ir a la etiqueta 1 " href="">
+                          la etiqueta 1
+                        </a>
+                      </span>
+                      <span class="tag-card-prensa">
+                        <a title="ir a la etiqueta 2 " href="">
+                          la etiqueta 2
+                        </a>
+                      </span>
+                    </div>
+                    <div class="card-text p-3">
+                      <div class="title-card-prensa">
+                        <a
+                          href="#"
+                          title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                        >
+                          RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                          DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                          DE LA PROSPERIDAD
+                        </a>
+                      </div>
+                      <span class="time-prensa">diciembre 3, 2021</span>
+                      <p class="paragraph-V size-14-V">
+                        El proyecto que tiene una longitud de 146 kilómetros
+                        entre los departamentos de Bolívar y Atlántico contempló
+                        una inversión de COP 1.64 billones. Con la puesta en
+                        servicio de este
+                      </p>
+                      <div class="btn-isa icon-after-V">
+                        <a href="#" title="ir a Ver más">Ver más</a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="card-prensa"
+                    style="background-color: var(--white-main)"
+                    style="background-color: var(--white-main)"
+                  >
+                    <a class="mask-V" href="#" title="ir a Ver más">
+                      <img
+                        src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                        alt="banner"
+                      />
+                    </a>
+                    <div class="card-text p-3">
+                      <div class="title-card-prensa">
+                        <a
+                          href="#"
+                          title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                        >
+                          RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                          DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                          DE LA PROSPERIDAD
+                        </a>
+                      </div>
+                      <span class="time-prensa">diciembre 3, 2021</span>
+                      <p class="paragraph-V size-14-V">
+                        El proyecto que tiene una longitud de 146 kilómetros
+                        entre los departamentos de Bolívar y Atlántico contempló
+                        una inversión de COP 1.64 billones. Con la puesta en
+                        servicio de este
+                      </p>
+                      <div class="btn-isa icon-after-V">
+                        <a href="#" title="ir a Ver más">Ver más</a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="card-prensa"
+                    style="background-color: var(--white-main)"
+                    style="background-color: var(--white-main)"
+                  >
+                    <a class="mask-V" href="#" title="ir a Ver más">
+                      <img
+                        src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                        alt="banner"
+                      />
+                    </a>
+                    <div class="card-text p-3">
+                      <div class="title-card-prensa">
+                        <a
+                          href="#"
+                          title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                        >
+                          RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                          DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                          DE LA PROSPERIDAD
+                        </a>
+                      </div>
+                      <span class="time-prensa">diciembre 3, 2021</span>
+                      <p class="paragraph-V size-14-V">
+                        El proyecto que tiene una longitud de 146 kilómetros
+                        entre los departamentos de Bolívar y Atlántico contempló
+                        una inversión de COP 1.64 billones. Con la puesta en
+                        servicio de este
+                      </p>
+                      <div class="btn-isa icon-after-V">
+                        <a href="#" title="ir a Ver más">Ver más</a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="card-prensa"
+                    style="background-color: var(--white-main)"
+                    style="background-color: var(--white-main)"
+                  >
+                    <a class="mask-V" href="#" title="ir a Ver más">
+                      <img
+                        src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                        alt="banner"
+                      />
+                    </a>
+                    <div class="card-text p-3">
+                      <div class="title-card-prensa">
+                        <a
+                          href="#"
+                          title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                        >
+                          RUTA COSTERA, EMPRESA DE ISA,
+                        </a>
+                      </div>
+                      <span class="time-prensa">diciembre 3, 2021</span>
+                      <p class="paragraph-V size-14-V">
+                        El proyecto que tiene una longitud de 146 kilómetros en
+                      </p>
+                      <div class="btn-isa icon-after-V">
+                        <a href="#" title="ir a Ver más">Ver más</a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="card-prensa"
+                    style="background-color: var(--white-main)"
+                    style="background-color: var(--white-main)"
+                  >
+                    <a class="mask-V" href="#" title="ir a Ver más">
+                      <img
+                        src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                        alt="banner"
+                      />
+                    </a>
+                    <div class="card-text p-3">
+                      <div class="title-card-prensa">
+                        <a
+                          href="#"
+                          title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                        >
+                          RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                          DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                          DE LA PROSPERIDAD
+                        </a>
+                      </div>
+                      <span class="time-prensa">diciembre 3, 2021</span>
+                      <p class="paragraph-V size-14-V">
+                        El proyecto que tiene una longitud de 146 kilómetros
+                        entre los departamentos de Bolívar y Atlántico contempló
+                        una inversión de COP 1.64 billones. Con la puesta en
+                        servicio de este
+                      </p>
+                      <div class="btn-isa icon-after-V">
+                        <a href="#" title="ir a Ver más">Ver más</a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="card-prensa"
+                    style="background-color: var(--white-main)"
+                    style="background-color: var(--white-main)"
+                  >
+                    <a class="mask-V" href="#" title="ir a Ver más">
+                      <img
+                        src="./images/WhatsApp-Image-2021-11-18-at-5.01.25-PM.jpeg"
+                        alt="banner"
+                      />
+                    </a>
+                    <div class="card-text p-3">
+                      <div class="title-card-prensa">
+                        <a
+                          href="#"
+                          title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                        >
+                          RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                          DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                          DE LA PROSPERIDAD
+                        </a>
+                      </div>
+                      <span class="time-prensa">diciembre 3, 2021</span>
+                      <p class="paragraph-V size-14-V">
+                        El proyecto que tiene una longitud de 146 kilómetros
+                        entre los departamentos de Bolívar y Atlántico contempló
+                        una inversión de COP 1.64 billones. Con la puesta en
+                        servicio de este
+                      </p>
+                      <div class="btn-isa icon-after-V">
+                        <a href="#" title="ir a Ver más">Ver más</a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- HU 32 Sala de prensa - Detalle de noticia -->
+    <section class="datail-news-V">
+      <div class="detail-container container">
+        <div class="header-detail d-flex">
+          <div class="date-detail d-flex">
+            <i class="fa fa-calendar mr-3" aria-hidden="true"></i>
+            <p class="title-V size-18-V mb-0">OCTUBRE 31, 2022</p>
+          </div>
+          <!-- HU 40 Sala de prensa - Compartir noticia en redes sociales -->
+          <div class="social-V d-flex">
+            <p class="title-V size-18-V orange-V">Compartir en redes</p>
+            <ul class="social-list d-flex mb-0">
+              <li class="shared fb">
+                <a href="#" title="Compartir en Facebook">
+                  <img src="./images/icons/Facebook.svg" alt="Facebook" />
+                </a>
+              </li>
+              <li class="shared tt">
+                <a href="#" title="Compartir en Twitter">
+                  <img src="./images/icons/Twitter.svg" alt="Twitter" />
+                </a>
+              </li>
+              <li class="shared ln">
+                <a href="#" title="Compartir en LinkedIn">
+                  <img src="./images/icons/LinkedIn.svg" alt="LinkedIn" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rich-container">
+          <h2>h2</h2>
+          <h3>h3</h3>
+          <h4>h4</h4>
+          <h5>h5</h5>
+          <h6>h6</h6>
+          <p>Este es un parrafo de pruebas</p>
+          <p><strong>Este es </strong>un parrafo de <a href="#">pruebas</a></p>
+          <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+          </ul>
+          <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- HU 35 Log in - Formulario registro de proveedores  -->
+    <section class="register-form-V py-4">
+      <div class="container mb-4">
+        <h2 class="title-V text-center">Registro Proveedores</h2>
+      </div>
+      <form class="container form-float-V">
+        <fieldset>
+          <legend class="sr-only">Información de registro</legend>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="business-name-R">Razón Social *</label>
+              <input
+                type="number"
+                class="form-control"
+                id="business-name-R"
+                placeholder="Ingrese su Razón Social"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor, escriba su razón social
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="nit-R">NIT *</label>
+              <input
+                type="number"
+                class="form-control"
+                id="nit-R"
+                placeholder="Ingrese número NIT de la empresa"
+                required
+              />
+              <div class="invalid-feedback">Por favor, escriba el NIT</div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="name-person-R">Nombre completo *</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name-person-R"
+                placeholder="Ingrese su nombre completo"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor, escriba su nombre completo
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="document-R">Número de documento *</label>
+              <input
+                type="number"
+                class="form-control"
+                id="document-R"
+                placeholder="Ingrese número de documento"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor, escriba su número de documento
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="tel-R">Teléfono *</label>
+              <input
+                type="number"
+                class="form-control"
+                id="tel-R"
+                placeholder="Ingrese su número de teléfono"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor, escriba su número de teléfono
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="email-R">E – mail *</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email-R"
+                placeholder="Ingrese su correo electrónico"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor, escriba su número de teléfono
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6 password-V">
+              <label for="password-R">Contraseña *</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password-R"
+                placeholder="Ingrese su contraseña"
+                required
+              />
+
+              <div class="input-group-append">
+                <button
+                  class="show-password"
+                  type="button"
+                  onclick="viewPassword('password-R')"
+                  title="mostrar/ocultar contraseña"
+                >
+                  <span class="fa fa-eye-slash icon-V"></span>
+                </button>
+              </div>
+              <div class="invalid-feedback">
+                Por favor, escriba su número de teléfono
+              </div>
+            </div>
+            <div class="form-group col-md-6 password-V">
+              <label for="password-confirm-R">Confirmar Contraseña *</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password-confirm-R"
+                placeholder="Ingrese su contraseña nuevamente"
+                required
+              />
+
+              <div class="input-group-append">
+                <button
+                  class="show-password"
+                  type="button"
+                  onclick="viewPassword('password-confirm-R')"
+                  title="mostrar/ocultar contraseña"
+                >
+                  <span class="fa fa-eye-slash icon-V"></span>
+                </button>
+              </div>
+              <div class="invalid-feedback">
+                Por favor, escriba su número de teléfono
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="profile-R">Perfil de usuario *</label>
+              <select id="profile-R" class="form-control" required>
+                <option selected disabled>
+                  Seleccione un perfil de usuario
+                </option>
+                <option>Consultar facturas</option>
+                <option>Consultar certificado tributario</option>
+                <option>Ambos</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor, escriba su número de teléfono
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="files-R">Adjuntar portafolios de servicios *</label>
+              <div class="file-container-V">
+                <input
+                  type="file"
+                  class="form-control-file"
+                  id="files-R"
+                  required
+                />
+              </div>
+              <div class="file-load-R d-none">
+                <p class="title-file-R">test</p>
+                <p class="size-file-R">1.5 mb</p>
+                <button
+                  type="button"
+                  onclick="clearFileR()"
+                  title="Borrar archivo"
+                >
+                  <span class="fa fa-times icon-V"></span>
+                </button>
+              </div>
+              <div class="invalid-feedback">
+                Por favor, escriba su número de teléfono
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <div class="captcha-V mx-auto mb-4 mt-2">
+          <img src="./images/captcha.PNG" alt="capt" />
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+          <div class="btn-isa mx-2">
+            <button type="submit" data-toggle="modal" data-target="#">
+              Crear cuenta
+            </button>
+          </div>
+          <div class="btn-isa btn-transparent-V mx-2">
+            <button type="button">Cancelar</button>
+          </div>
+        </div>
+      </form>
+      <!-- Modal -->
+      <div class="modal fade modal-register-V" id="response-register" tabindex="-1" aria-labelledby="label-state-R"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="modal-title sr-only" id="label-state-R">Estado de la solicitud</span>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar estado">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-response sent-response-V response-sent d-none">
+                <div class="logo-V mx-auto mb-3">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <p>
+                  Su cuenta ha sido creada con éxito, se encuentra en estado
+                  pendiente de aprobación
+                </p>
+              </div>
+              <div class="modal-response sent-response-V response-waiting d-none">
+                <div class="logo-V mx-auto mb-3">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <p>
+                  La información ingresada ya se encuentra registrada y en
+                  proceso de aprobación, por favor espere la respuesta a su
+                  solicitud de creación de cuenta
+                </p>
+              </div>
+              <div class="modal-response sent-response-V response-loading d-none">
+                <div class="logo-V mx-auto mb-3">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <p>
+                  Su cuenta ha sido creada con éxito, se encuentra en estado
+                  pendiente de aprobación
+                </p>
+              </div>
+              <div class="modal-response sent-response-V response-active d-none">
+                <div class="logo-V mx-auto mb-3">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <p>
+                  La información ingresada ya se encuentra registrada y fue
+                  aprobada, por favor diríjase al log in e ingrese su usuario y
+                  contraseña.
+                </p>
+              </div>
+              <div class="modal-response error-response-V response-fail">
+                <div class="logo-V mx-auto mb-3">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <p>
+                  La información ingresada ya se encuentra registrada y fue
+                  rechazada, por favor comuníquese con el Administrador
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="btn-isa mx-auto">
+                <button title="Salir" type="button" data-dismiss="modal">
+                  Salir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HU 37 Header - Resultado Buscador  -->
+    <section class="search-results-V">
+      <div class="container">
+        <h2 class="title-V underline-V">
+          RESULTADOS DE BÚSQUEDA PARA: PALABRA CLAVE
+        </h2>
+      </div>
+      <div class="container second-cont">
+        <div class="search-container">
+          <form>
+            <div class="container-input">
+              <input
+                type="text"
+                class="form-control-plaintext"
+                id="search-input-V"
+                value="PALABRA CLAVE"
+                aria-label="Buscar en Transelca"
+              />
+            </div>
+            <div class="btn-isa">
+              <button type="button" title="buscar">
+                <span class="sr-only">Buscar</span>
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="container-content">
+          <table id="search-results" class="display">
+            <thead class="d-none">
+              <tr>
+                <th>name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a
+                    class="card-result card-text p-3"
+                    href="#"
+                    title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                  >
+                    <div class="title-card-prensa">
+                      <p>
+                        RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                        DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                        DE LA PROSPERIDAD
+                      </p>
+                    </div>
+                    <span class="time-prensa">diciembre 3, 2021</span>
+                    <p class="paragraph-V size-14-V">
+                      El proyecto que tiene una longitud de 146 kilómetros entre
+                      los departamentos de Bolívar y Atlántico contempló una
+                      inversión de COP 1.64 billones. Con la puesta en servicio
+                      de este
+                    </p>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    class="card-result card-text p-3"
+                    href="#"
+                    title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                  >
+                    <div class="title-card-prensa">
+                      <p>
+                        RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                        DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                        DE LA PROSPERIDAD
+                      </p>
+                    </div>
+                    <span class="time-prensa">diciembre 3, 2021</span>
+                    <p class="paragraph-V size-14-V">
+                      El proyecto que tiene una longitud de 146 kilómetros entre
+                      los departamentos de Bolívar y Atlántico contempló una
+                      inversión de COP 1.64 billones. Con la puesta en servicio
+                      de este
+                    </p>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    class="card-result card-text p-3"
+                    href="#"
+                    title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                  >
+                    <div class="title-card-prensa">
+                      <p>
+                        RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                        DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                        DE LA PROSPERIDAD
+                      </p>
+                    </div>
+                    <span class="time-prensa">diciembre 3, 2021</span>
+                    <p class="paragraph-V size-14-V">
+                      El proyecto que tiene una longitud de 146 kilómetros entre
+                      los departamentos de Bolívar y Atlántico contempló una
+                      inversión de COP 1.64 billones. Con la puesta en servicio
+                      de este
+                    </p>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    class="card-result card-text p-3"
+                    href="#"
+                    title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                  >
+                    <div class="title-card-prensa">
+                      <p>
+                        RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                        DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                        DE LA PROSPERIDAD
+                      </p>
+                    </div>
+                    <span class="time-prensa">diciembre 3, 2021</span>
+                    <p class="paragraph-V size-14-V">
+                      El proyecto que tiene una longitud de 146 kilómetros entre
+                      los departamentos de Bolívar y Atlántico contempló una
+                      inversión de COP 1.64 billones. Con la puesta en servicio
+                      de este
+                    </p>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    class="card-result card-text p-3"
+                    href="#"
+                    title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                  >
+                    <div class="title-card-prensa">
+                      <p>
+                        RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                        DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                        DE LA PROSPERIDAD
+                      </p>
+                    </div>
+                    <span class="time-prensa">diciembre 3, 2021</span>
+                    <p class="paragraph-V size-14-V">
+                      El proyecto que tiene una longitud de 146 kilómetros entre
+                      los departamentos de Bolívar y Atlántico contempló una
+                      inversión de COP 1.64 billones. Con la puesta en servicio
+                      de este
+                    </p>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    class="card-result card-text p-3"
+                    href="#"
+                    title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                  >
+                    <div class="title-card-prensa">
+                      <p>
+                        RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                        DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                        DE LA PROSPERIDAD
+                      </p>
+                    </div>
+                    <span class="time-prensa">diciembre 3, 2021</span>
+                    <p class="paragraph-V size-14-V">
+                      El proyecto que tiene una longitud de 146 kilómetros entre
+                      los departamentos de Bolívar y Atlántico contempló una
+                      inversión de COP 1.64 billones. Con la puesta en servicio
+                      de este
+                    </p>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    class="card-result card-text p-3"
+                    href="#"
+                    title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                  >
+                    <div class="title-card-prensa">
+                      <p>
+                        RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                        DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                        DE LA PROSPERIDAD
+                      </p>
+                    </div>
+                    <span class="time-prensa">diciembre 3, 2021</span>
+                    <p class="paragraph-V size-14-V">
+                      El proyecto que tiene una longitud de 146 kilómetros entre
+                      los departamentos de Bolívar y Atlántico contempló una
+                      inversión de COP 1.64 billones. Con la puesta en servicio
+                      de este
+                    </p>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    class="card-result card-text p-3"
+                    href="#"
+                    title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                  >
+                    <div class="title-card-prensa">
+                      <p>
+                        RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                        DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                        DE LA PROSPERIDAD
+                      </p>
+                    </div>
+                    <span class="time-prensa">diciembre 3, 2021</span>
+                    <p class="paragraph-V size-14-V">
+                      El proyecto que tiene una longitud de 146 kilómetros entre
+                      los departamentos de Bolívar y Atlántico contempló una
+                      inversión de COP 1.64 billones. Con la puesta en servicio
+                      de este
+                    </p>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    class="card-result card-text p-3"
+                    href="#"
+                    title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                  >
+                    <div class="title-card-prensa">
+                      <p>
+                        RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                        DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                        DE LA PROSPERIDAD
+                      </p>
+                    </div>
+                    <span class="time-prensa">diciembre 3, 2021</span>
+                    <p class="paragraph-V size-14-V">
+                      El proyecto que tiene una longitud de 146 kilómetros entre
+                      los departamentos de Bolívar y Atlántico contempló una
+                      inversión de COP 1.64 billones. Con la puesta en servicio
+                      de este
+                    </p>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    class="card-result card-text p-3"
+                    href="#"
+                    title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                  >
+                    <div class="title-card-prensa">
+                      <p>
+                        RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                        DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                        DE LA PROSPERIDAD
+                      </p>
+                    </div>
+                    <span class="time-prensa">diciembre 3, 2021</span>
+                    <p class="paragraph-V size-14-V">
+                      El proyecto que tiene una longitud de 146 kilómetros entre
+                      los departamentos de Bolívar y Atlántico contempló una
+                      inversión de COP 1.64 billones. Con la puesta en servicio
+                      de este
+                    </p>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    class="card-result card-text p-3"
+                    href="#"
+                    title="ir a RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100% DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR DE LA PROSPERIDAD"
+                  >
+                    <div class="title-card-prensa">
+                      <p>
+                        RUTA COSTERA, EMPRESA DE ISA, PONE EN SERVICIO EL 100%
+                        DEL PROYECTO 4G CARTAGENA – BARRANQUILLA Y CIRCUNVALAR
+                        DE LA PROSPERIDAD
+                      </p>
+                    </div>
+                    <span class="time-prensa">diciembre 3, 2021</span>
+                    <p class="paragraph-V size-14-V">
+                      El proyecto que tiene una longitud de 146 kilómetros entre
+                      los departamentos de Bolívar y Atlántico contempló una
+                      inversión de COP 1.64 billones. Con la puesta en servicio
+                      de este
+                    </p>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="search-results-V">
+      <div class="container">
+        <h2 class="title-V underline-V">
+          RESULTADOS DE BÚSQUEDA PARA: PALABRA CLAVE
+        </h2>
+      </div>
+      <div class="container second-cont">
+        <div class="search-container">
+          <form>
+            <div class="container-input">
+              <input
+                type="text"
+                class="form-control-plaintext"
+                id="search-input-V"
+                value="PALABRA CLAVE"
+                aria-label="Buscar en Transelca"
+              />
+            </div>
+            <div class="btn-isa">
+              <button type="button" title="buscar">
+                <span class="sr-only">Buscar</span>
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="container-content">
+          <p class="title-V size-28-V text-center">
+            NO SE ENCONTRARON RESULTADOS PARA LA BUSQUEDA...
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- HU 39 Página interna - Mapa de infraestructura -->
+    <section class="map-V">
+      <div class="container-content">
+        <img src="./images/top_gobierno.jpg" alt="banner" />
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer-V" style="background-color: #f9f9f9">
+      <div class="background-footer"></div>
+      <div class="container-fluid mx-auto">
+        <div class="footer-content-1">
+          <div class="footer-links">
+            <ul class="p-0 m-0">
+              <li>
+                <a
+                  class="text-gris-V hover-links-orange"
+                  title="Ir a Línea Ética"
+                  href="#"
+                  >Línea Ética</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-gris-V hover-links-orange"
+                  title="Ir a Proveedores"
+                  href="#"
+                  >Proveedores</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-gris-V hover-links-orange"
+                  title="Ir a Trabaja en ISA"
+                  href="#"
+                  >Trabaja en ISA</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-gris-V hover-links-orange"
+                  title="Ir a Términos legales"
+                  href="#"
+                  >Términos legales</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-gris-V hover-links-orange"
+                  title="Ir a CREG 080 de 2019"
+                  href="#"
+                  >CREG 080 de 2019</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-gris-V hover-links-orange"
+                  title="Ir a Protección de datos"
+                  href="#"
+                  >Protección de datos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-gris-V hover-links-orange"
+                  title="Ir a Notificaciones judiciales"
+                  href="#"
+                  >Notificaciones judiciales</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <div class="links-large-V">
+              <ul class="p-0">
+                <li>
+                  <a href="#" title="Ir a CONTÁCTANOS">
+                    <span>CONTÁCTANOS</span>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title="Ir a TRANSPARENCIA Y ACCESO A LA INFORMACIÓN"
+                  >
+                    <span>TRANSPARENCIA Y ACCESO A LA INFORMACIÓN</span>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-social-links">
+              <p>Síguenos en redes sociales</p>
+              <div class="d-flex">
+                <p>@ISAConexiones</p>
+                <ul>
+                  <li>
+                    <a href="#" title="Ir a Facebook">
+                      <img src="./images/icons/Facebook.svg" alt="Facebook" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="Ir a Twitter">
+                      <img src="./images/icons/Twitter.svg" alt="Twitter" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="Ir a Youtube">
+                      <img src="./images/icons/Youtube.svg" alt="Youtube" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="Ir a Instagram">
+                      <img src="./images/icons/Instagram.svg" alt="Instagram" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="Ir a LinkedIn">
+                      <img src="./images/icons/LinkedIn.svg" alt="LinkedIn" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content-2">
+          <div class="footer-attention">
+            <p>Sede Administrativa</p>
+            <ul>
+              <li>
+                <img src="./images/icons/phone.svg" alt="icono telefono" />
+                <span
+                  >Carrera 24 # 1A-24 Edificio BC Empresarial piso 18. Puerto
+                  Colombia, Atlántico - Colombia</span
+                >
+              </li>
+              <li>
+                <img src="./images/icons/phone.svg" alt="icono telefono" />
+                <span>Línea Ética: 018000423661</span>
+              </li>
+              <li>
+                <img src="./images/icons/phone.svg" alt="icono telefono" />
+                <span
+                  >De lunes a viernes de 7:45 a 12:30 y 1:45 a 5:00 p.m.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid legal-footer">
+        <p>
+          <strong>Copyright © 2022 ISA</strong> Todos los derechos reservados |
+          Medellín – Colombia.
+        </p>
+      </div>
+      <div class="container-fluid logos-footer">
+        <a href="#">
+          <img src="./images/Gov-Colombia.jpg" alt="Gov-Colombia" />
+        </a>
+      </div>
+    </footer>
+
+    <!-- Lllamado de scripts -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+.Transelca-V  {
+    .slider-V {
+        .n2-ss-section-main-content {
+            h1, h2, h3 {
+                font-family: var(--font-bold) !important;
+            }
+            h4, h5, h6, p, li {
+                font-family: var(--font-regular) !important;
+            }
+            a {
+                font-family: var(--font-bold) !important;
+                div {
+                    font-family: var(--font-bold) !important;
+                }
+            }
+        }        
+    }
+}

@@ -1,0 +1,88 @@
+.Transelca-V { 
+    .carousel-cards {
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 15px;
+        .slick-next:before, .slick-prev:before {
+            color: var(--dark-blue-50);
+        }
+        .slick-list, .slick-slider, .slick-track {
+            display: flex;
+        }
+        .slick-initialized .slick-slide {
+            display: flex;
+            flex-direction: column;
+        }
+        .is-layout-constrained {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 0px;
+            height: 100%;
+        }
+        .wp-block-cb-slide.slick-slide {
+            min-height: 250px;
+            margin: 0px 5px;
+            border: solid 1px #FFB81C;
+            border-radius: 15px;
+            margin-bottom: 5px;
+            padding: 0px;
+            h1, h2, h3, h4, h5, h6 {
+                font-family: var(--font-bold);
+                font-size: var(--font-size-22);
+                color: var(--orange-50);
+            }
+            p, li {
+                font-family: var(--font-regular);
+                font-size: var(--font-size-16);
+                color: var(--black-80);
+            }
+            p, div {
+                a {
+                    padding: 8px 50px 8px 19px;
+                    border-radius: 24px;
+                    border: solid 1px var(--dark-blue-50);
+                    display: block;
+                    width: 100%;
+                    font-size: var(--font-size-16);
+                    font-family: var(--font-regular);
+                    background-color: transparent;
+                    color: var(--dark-blue-50);
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        font: normal normal normal 14px/1 FontAwesome;
+                        top: 9px;
+                        right: 15px;
+                        content: '\f0ed';
+                        font-size: 25px;
+                    }
+                    &:hover {
+                        background-color: var(--dark-blue-50);
+                        color: var(--white-main);
+                        text-decoration: none;
+                    }
+                }
+            }
+            p {
+                &:last-child {
+                    margin-top: auto;
+                }
+            }
+        }
+        .slick-dots {
+            li {
+                button {
+                    &::before {
+                        font-size: 12px;
+                        line-height: 20px;
+                        width: 25px;
+                        height: 25px;
+                        color: var(--dark-blue-50);
+                    }
+                }
+            }
+        }
+    }
+}
