@@ -1094,7 +1094,7 @@
         width: 100%;
         height: 22%;
         position: absolute;
-        top: 0px;
+        top: -2px;
         left: 0;
         transform: rotateY(180deg) rotateX(6deg);
         fill: var(--white-main);
@@ -2090,6 +2090,28 @@
               color: var(--orange-50);
               font-family: var(--font-bold);
             }
+          }
+        }
+        .banner-communicate-contact {
+          width: 50%;
+          img {
+            position: absolute;
+            width: 28px;
+            filter: brightness(0) saturate(100%) invert(13%) sepia(54%)
+              saturate(4724%) hue-rotate(212deg) brightness(89%) contrast(108%);
+          }
+          p,
+          a {
+            padding-left: 35px;
+            font-size: var(--font-size-20);
+            color: var(--orange-50);
+            font-family: var(--font-bold);
+            margin-bottom: 0;
+          }
+          p.paragraph-V{
+            font-size: var(--font-size-18);
+            font-family: var(--font-regular);
+            color: var(--black-80);
           }
         }
         .btn-isa {
