@@ -1283,6 +1283,45 @@
   }
 
   //HU 24 FORMULARIO CONTACTENOS
+    .ethical-issues-V {
+      form {
+        &.form-float-V {
+          .btn-isa {
+            button {
+              &.t-is-login__btn--rotated {
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                border-color: var(--black-20);
+                border-width: 3px;
+                border-left-color: var(--dark-blue-50);
+                animation: rotating 2s 0.25s linear infinite;
+                background: none;
+  
+                &:after {
+                  content: "";
+                }
+  
+                &:hover {
+                  color: var(--dark-blue-50);
+                  background: white;
+                }
+              }
+  
+              &.t-is-login__btn--validated {
+                color: white;
+                background: var(--dark-blue-50);
+  
+                &:after {
+                  font-family: "FontAwesome";
+                  content: "\f00c";
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   .contact-V,
   .ethical-issues-V,
   .register-form-V {
@@ -2724,8 +2763,8 @@
   #body_efb {
     &.card.efb {
       background-color: rgba(0, 48, 135, 0.04) !important;
-      box-shadow: -1px 5px 13px 0px rgb(0 0 0 / 41%) !important;
-      -webkit-box-shadow: -1px 5px 13px 0px rgb(0 0 0 / 41%) !important;
+      box-shadow: -1px 5px 13px 0px rgba(0, 0, 0, 0.41) !important;
+      -webkit-box-shadow: -1px 5px 13px 0px rgba(0, 0, 0, 0.41) !important;
     }
     &.efb {
       .efb.col-form-label {
