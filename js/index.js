@@ -337,7 +337,7 @@ function isValidEmailAddress(emailAddress) {
   return pattern.test(emailAddress);
 }
 
-/*function validateSubmitEthical() {
+function validateSubmitEthical() {
   let validateForm = 0;
   if ($("#asunto-e").val() == "") {
     document.getElementById("asunto-e").classList.add("is-invalid");
@@ -372,9 +372,9 @@ function isValidEmailAddress(emailAddress) {
     $("label[for='accept-terms-e']").removeClass("is-invalid");
   }
   return validateForm;
-}*/
+}
 //modal al clikear submit ASUNTOS ETICOS
-/*$(".ethical-issues-V button:submit").click(function (e) {
+$(".ethical-issues-V button:submit").click(function (e) {
   e.preventDefault(); // avoid to execute the actual submit of the form.
 
   var form = $("#theFormContact");
@@ -397,7 +397,7 @@ function isValidEmailAddress(emailAddress) {
       location.href = "../";
     });
   }
-});*/
+});
 
 /* FORMULARIO DE REGISTRO */
 function validateSubmitRegister() {
