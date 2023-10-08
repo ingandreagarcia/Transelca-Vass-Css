@@ -2415,6 +2415,19 @@
 .Transelca-V .map-V .container-content img {
   width: 100%;
   height: auto; }
+.Transelca-V .btn-list-V {
+  padding: 10px 10px; }
+  .Transelca-V .btn-list-V .icon-after-V a {
+    max-width: 100%;
+    width: 100%; }
+    .Transelca-V .btn-list-V .icon-after-V a::after {
+      content: "\f0ed"; }
+  .Transelca-V .btn-list-V .icon-after-V.btn-transparent-V a::after {
+    content: "\f061"; }
+.Transelca-V .site-content .entry-content {
+  font-size: var(--font-size-18);
+  font-family: var(--font-regular);
+  color: var(--black-80); }
 .Transelca-V.customize-support .miga-V ul {
   padding: 35px 0px 15px 0px; }
 .Transelca-V .hbupro-hero-banner-wrp-1 .hbupro-hero-banner h2.hbupro-hero-banner-title {
