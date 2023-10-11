@@ -1577,6 +1577,15 @@
       }
     }
 
+    .is-invalid {
+        .file-load-R {
+            border-color: var(--error-color);
+            p, button {
+                color: var(--error-color);
+            }
+        }
+    }
+
     .file-container-V {
       position: relative;
       display: inline-block;
@@ -1720,7 +1729,7 @@
       textarea {
         &.is-invalid {
           border-color: var(--error-color);
-
+            color: var(--black-100);
           &::placeholder {
             color: var(--error-color);
           }
@@ -1751,7 +1760,7 @@
           }
 
           &.is-invalid {
-            bottom: 32px;
+            bottom: 36px;
 
             button {
               .icon-V {

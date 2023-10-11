@@ -63,6 +63,10 @@
     width: max-content;
     font-size: var(--font-size-16);
     font-family: var(--font-regular); }
+  .Transelca-V .btn-isa button:disabled {
+    background-color: var(--black-20);
+    color: var(--black-50);
+    border: var(--black-50); }
   .Transelca-V .btn-isa.icon-V a,
   .Transelca-V .btn-isa.icon-V button,
   .Transelca-V .btn-isa.icon-V input {
@@ -1309,6 +1313,16 @@
     border: 0px;
     background-color: transparent;
     color: var(--dark-blue-50); }
+.Transelca-V .contact-V .is-invalid .file-load-R,
+.Transelca-V .ethical-issues-V .is-invalid .file-load-R,
+.Transelca-V .register-form-V .is-invalid .file-load-R {
+  border-color: var(--error-color); }
+  .Transelca-V .contact-V .is-invalid .file-load-R p, .Transelca-V .contact-V .is-invalid .file-load-R button,
+  .Transelca-V .ethical-issues-V .is-invalid .file-load-R p,
+  .Transelca-V .ethical-issues-V .is-invalid .file-load-R button,
+  .Transelca-V .register-form-V .is-invalid .file-load-R p,
+  .Transelca-V .register-form-V .is-invalid .file-load-R button {
+    color: var(--error-color); }
 .Transelca-V .contact-V .file-container-V,
 .Transelca-V .ethical-issues-V .file-container-V,
 .Transelca-V .register-form-V .file-container-V {
@@ -1480,7 +1494,8 @@
 .Transelca-V .ethical-issues-V .form-group textarea.is-invalid,
 .Transelca-V .register-form-V .form-group input.is-invalid,
 .Transelca-V .register-form-V .form-group textarea.is-invalid {
-  border-color: var(--error-color); }
+  border-color: var(--error-color);
+  color: var(--black-100); }
   .Transelca-V .contact-V .form-group input.is-invalid::placeholder,
   .Transelca-V .contact-V .form-group textarea.is-invalid::placeholder,
   .Transelca-V .ethical-issues-V .form-group input.is-invalid::placeholder,
@@ -1517,7 +1532,7 @@
     .Transelca-V .contact-V .form-group.password-V .input-group-append.is-invalid,
     .Transelca-V .ethical-issues-V .form-group.password-V .input-group-append.is-invalid,
     .Transelca-V .register-form-V .form-group.password-V .input-group-append.is-invalid {
-      bottom: 32px; }
+      bottom: 36px; }
       .Transelca-V .contact-V .form-group.password-V .input-group-append.is-invalid button .icon-V,
       .Transelca-V .ethical-issues-V .form-group.password-V .input-group-append.is-invalid button .icon-V,
       .Transelca-V .register-form-V .form-group.password-V .input-group-append.is-invalid button .icon-V {

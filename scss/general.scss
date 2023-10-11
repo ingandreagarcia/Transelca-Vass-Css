@@ -13,6 +13,11 @@
       font-size: var(--font-size-16);
       font-family: var(--font-regular);
     }
+    button:disabled {
+        background-color: var(--black-20);
+        color: var(--black-50);
+        border: var(--black-50);
+    }
     &.icon-V {
       a,
       button,
