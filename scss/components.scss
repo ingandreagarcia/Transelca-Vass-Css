@@ -65,6 +65,8 @@
           background-color: transparent;
           color: var(--white-main);
           border: 0px;
+          padding-top: 16px;
+          padding-bottom: 16px;
         }
 
         option {
@@ -118,6 +120,11 @@
                     color: var(--white-main);
 
                     &::placeholder {
+                      color: var(--white-main);
+                      opacity: 0.5;
+                    }
+
+                    &::-moz-placeholder {
                       color: var(--white-main);
                       opacity: 0.5;
                     }
@@ -232,6 +239,11 @@
                           color: var(--white-main);
                           opacity: 0.5;
                         }
+
+                        &::-moz-placeholder {
+                          color: var(--white-main);
+                          opacity: 0.5;
+                        }
                       }
                     }
                   }
@@ -343,9 +355,9 @@
 
   //Login y modal HU 24 contactenos
   .modal-login-V,
-  .modal-contact-V,
-  .modal-ethical-V,
-  .modal-register-V {
+  .contact-V,
+  .ethical-issues-V,
+  .register-V {
     .modal-header {
       border: 0px;
 
@@ -426,6 +438,10 @@
               &::placeholder {
                 color: var(--dark-blue-50);
               }
+
+              &::-moz-placeholder {
+                color: var(--dark-blue-50);
+              }
             }
 
             .form-group.has-error {
@@ -439,11 +455,15 @@
                 &::placeholder {
                   color: var(--error-color);
                 }
+
+                &::-moz-placeholder {
+                  color: var(--error-color);
+                }
               }
             }
 
             .btn-isa {
-              a {
+              button {
                 &.t-is-login__btn--rotated {
                   width: 40px;
                   height: 40px;
@@ -768,7 +788,9 @@
       overflow: hidden;
 
       img {
+        -o-object-fit: cover;
         object-fit: cover;
+        -o-object-position: 100% -450px;
         object-position: 100% -450px;
       }
     }
@@ -840,7 +862,9 @@
 
       img {
         width: 100%;
+        -o-object-fit: cover;
         object-fit: cover;
+        -o-object-position: 100% -450px;
         object-position: 100% -450px;
       }
     }
@@ -1055,8 +1079,10 @@
             }
 
             .t-c-banner-silder-h09__column__img {
+              -o-object-fit: cover;
               object-fit: cover;
               overflow: hidden;
+              -o-object-position: center;
               object-position: center;
               height: 100%;
 
@@ -1255,6 +1281,7 @@
                 content: "\f178";
                 font-size: 20px;
                 position: relative;
+                height: -moz-min-content;
                 height: min-content;
                 left: 40px;
                 top: 0;
@@ -1290,7 +1317,9 @@
 
       .t-c-banner-onda__img {
         img {
+          -o-object-fit: cover;
           object-fit: cover;
+          -o-object-position: center;
           object-position: center;
           width: 100%;
           height: 100%;
@@ -1415,7 +1444,9 @@
               border-radius: 5px;
 
               img {
+                -o-object-fit: cover;
                 object-fit: cover;
+                -o-object-position: center;
                 object-position: center;
                 height: 100%;
                 border-radius: 5px;
@@ -1723,6 +1754,10 @@
         &::placeholder {
           color: var(--dark-blue-50);
         }
+
+        &::-moz-placeholder {
+          color: var(--dark-blue-50);
+        }
       }
 
       input,
@@ -1731,6 +1766,10 @@
           border-color: var(--error-color);
             color: var(--black-100);
           &::placeholder {
+            color: var(--error-color);
+          }
+
+          &::-moz-placeholder {
             color: var(--error-color);
           }
         }
@@ -1777,6 +1816,7 @@
         margin: 0;
       }
 
+      input[type="password"]::-ms-reveal,
       select {
         padding-right: 30px;
         height: 45px;
@@ -1809,6 +1849,8 @@
       }
 
       input[type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
         appearance: none;
         border-radius: 50%;
         border: 1px solid var(--dark-blue-50);
@@ -1875,6 +1917,7 @@
 
       .mask-V {
         width: 100%;
+        -o-object-fit: cover;
         object-fit: cover;
       }
     }
@@ -1932,6 +1975,7 @@
       img {
         width: 100%;
         height: 100%;
+        -o-object-fit: contain;
         object-fit: contain;
       }
     }
@@ -1975,7 +2019,9 @@
       }
 
       img {
+        -o-object-fit: cover;
         object-fit: cover;
+        -o-object-position: center;
         object-position: center;
         width: 100%;
         height: 100%;
@@ -2114,7 +2160,7 @@
       .box-download {
         padding: 3em 1em 2em 82px;
       }
-
+      height: -moz-min-content;
       height: min-content;
       border-radius: 12px;
       border: solid var(--orange-50);
@@ -2228,6 +2274,7 @@
         h5,
         h6,
         p {
+          height: -moz-min-content;
           height: min-content;
         }
 
@@ -2531,6 +2578,7 @@
           .mask-V {
             border-radius: 15px 0px 0px 0px;
             width: 50%;
+            -o-object-fit: contain;
             object-fit: contain;
           }
 
@@ -2838,7 +2886,9 @@
           width: 30px;
           height: 30px;
           overflow: hidden;
+          -o-object-fit: contain;
           object-fit: contain;
+          -o-object-position: center;
           object-position: center;
 
           img {
@@ -3144,6 +3194,10 @@
               &::placeholder {
                 font-family: var(--font-regular);
               }
+
+              &::-moz-placeholder {
+                font-family: var(--font-regular);
+              }
             }
           }
 
@@ -3271,6 +3325,11 @@
           color: var(--dark-blue-50) !important;
           opacity: 1 !important;
         }
+
+        &::-moz-placeholder {
+          color: var(--dark-blue-50) !important;
+          opacity: 1 !important;
+        }
       }
 
       input[type="text"]::placeholder,
@@ -3280,6 +3339,17 @@
       input[type="number"]::placeholder,
       input[type="url"]::placeholder,
       input[type="textarea"]::placeholder {
+        color: var(--dark-blue-50) !important;
+        opacity: 1 !important;
+      }
+
+      input[type="text"]::-moz-placeholder,
+      input[type="password"]::-moz-placeholder,
+      input[type="email"]::-moz-placeholder,
+      input[type="tel"]::-moz-placeholder,
+      input[type="number"]::-moz-placeholder,
+      input[type="url"]::-moz-placeholder,
+      input[type="textarea"]::-moz-placeholder {
         color: var(--dark-blue-50) !important;
         opacity: 1 !important;
       }

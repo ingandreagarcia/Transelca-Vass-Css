@@ -296,7 +296,9 @@
       .Transelca-V .navbar .items-container-mobile .languaje-V select {
         background-color: transparent;
         color: var(--white-main);
-        border: 0px; }
+        border: 0px;
+        padding-top: 16px;
+        padding-bottom: 16px; }
       .Transelca-V .navbar .items-container-mobile .languaje-V option {
         color: var(--dark-blue-50); }
     .Transelca-V .navbar .items-container-mobile::before {
@@ -334,6 +336,9 @@
             border-radius: 50px;
             color: var(--white-main); }
             .Transelca-V .navbar .items-container-mobile .search-V .dropdown-menu .search-container form div span input::placeholder {
+              color: var(--white-main);
+              opacity: 0.5; }
+            .Transelca-V .navbar .items-container-mobile .search-V .dropdown-menu .search-container form div span input::-moz-placeholder {
               color: var(--white-main);
               opacity: 0.5; }
     .Transelca-V .navbar .items-container-mobile .dropdown-menu.active-V {
@@ -399,6 +404,9 @@
             .Transelca-V .navbar .navbar-nav.end-nav-V .nav-item.search-V .dropdown-menu .search-container form div span input::placeholder {
               color: var(--white-main);
               opacity: 0.5; }
+            .Transelca-V .navbar .navbar-nav.end-nav-V .nav-item.search-V .dropdown-menu .search-container form div span input::-moz-placeholder {
+              color: var(--white-main);
+              opacity: 0.5; }
       .Transelca-V .navbar .navbar-nav.end-nav-V .nav-item .nav-link, .Transelca-V .navbar .navbar-nav.end-nav-V .nav-item.dropdown-V .nav-link {
         color: var(--white-main); }
     .Transelca-V .navbar .navbar-nav .nav-item {
@@ -459,30 +467,30 @@
               .Transelca-V .navbar .navbar-nav .dropdown-V .dropdown-menu .drop-V .drop-item-V .sub-menu-V li {
                 list-style-type: none; }
 .Transelca-V .modal-login-V .modal-header,
-.Transelca-V .modal-contact-V .modal-header,
-.Transelca-V .modal-ethical-V .modal-header,
-.Transelca-V .modal-register-V .modal-header {
+.Transelca-V .contact-V .modal-header,
+.Transelca-V .ethical-issues-V .modal-header,
+.Transelca-V .register-V .modal-header {
   border: 0px; }
   .Transelca-V .modal-login-V .modal-header button,
-  .Transelca-V .modal-contact-V .modal-header button,
-  .Transelca-V .modal-ethical-V .modal-header button,
-  .Transelca-V .modal-register-V .modal-header button {
+  .Transelca-V .contact-V .modal-header button,
+  .Transelca-V .ethical-issues-V .modal-header button,
+  .Transelca-V .register-V .modal-header button {
     color: var(--dark-blue-50);
     opacity: 1; }
 .Transelca-V .modal-login-V .modal-footer,
-.Transelca-V .modal-contact-V .modal-footer,
-.Transelca-V .modal-ethical-V .modal-footer,
-.Transelca-V .modal-register-V .modal-footer {
+.Transelca-V .contact-V .modal-footer,
+.Transelca-V .ethical-issues-V .modal-footer,
+.Transelca-V .register-V .modal-footer {
   border: 0px; }
 .Transelca-V .modal-login-V .modal-response,
-.Transelca-V .modal-contact-V .modal-response,
-.Transelca-V .modal-ethical-V .modal-response,
-.Transelca-V .modal-register-V .modal-response {
+.Transelca-V .contact-V .modal-response,
+.Transelca-V .ethical-issues-V .modal-response,
+.Transelca-V .register-V .modal-response {
   width: 100%; }
   .Transelca-V .modal-login-V .modal-response .logo-V,
-  .Transelca-V .modal-contact-V .modal-response .logo-V,
-  .Transelca-V .modal-ethical-V .modal-response .logo-V,
-  .Transelca-V .modal-register-V .modal-response .logo-V {
+  .Transelca-V .contact-V .modal-response .logo-V,
+  .Transelca-V .ethical-issues-V .modal-response .logo-V,
+  .Transelca-V .register-V .modal-response .logo-V {
     width: 150px;
     height: 150px;
     border-radius: 100%;
@@ -492,88 +500,98 @@
     justify-content: center;
     align-items: center; }
   .Transelca-V .modal-login-V .modal-response i,
-  .Transelca-V .modal-contact-V .modal-response i,
-  .Transelca-V .modal-ethical-V .modal-response i,
-  .Transelca-V .modal-register-V .modal-response i {
+  .Transelca-V .contact-V .modal-response i,
+  .Transelca-V .ethical-issues-V .modal-response i,
+  .Transelca-V .register-V .modal-response i {
     font-size: 110px; }
   .Transelca-V .modal-login-V .modal-response p,
-  .Transelca-V .modal-contact-V .modal-response p,
-  .Transelca-V .modal-ethical-V .modal-response p,
-  .Transelca-V .modal-register-V .modal-response p {
+  .Transelca-V .contact-V .modal-response p,
+  .Transelca-V .ethical-issues-V .modal-response p,
+  .Transelca-V .register-V .modal-response p {
     text-align: center;
     font-family: var(--font-regular);
     font-size: var(--font-size-16);
     margin-bottom: 0px; }
   .Transelca-V .modal-login-V .modal-response.sent-response-V .logo-V,
-  .Transelca-V .modal-contact-V .modal-response.sent-response-V .logo-V,
-  .Transelca-V .modal-ethical-V .modal-response.sent-response-V .logo-V,
-  .Transelca-V .modal-register-V .modal-response.sent-response-V .logo-V {
+  .Transelca-V .contact-V .modal-response.sent-response-V .logo-V,
+  .Transelca-V .ethical-issues-V .modal-response.sent-response-V .logo-V,
+  .Transelca-V .register-V .modal-response.sent-response-V .logo-V {
     border-color: var(--dark-blue-50); }
   .Transelca-V .modal-login-V .modal-response.sent-response-V p,
   .Transelca-V .modal-login-V .modal-response.sent-response-V i,
-  .Transelca-V .modal-contact-V .modal-response.sent-response-V p,
-  .Transelca-V .modal-contact-V .modal-response.sent-response-V i,
-  .Transelca-V .modal-ethical-V .modal-response.sent-response-V p,
-  .Transelca-V .modal-ethical-V .modal-response.sent-response-V i,
-  .Transelca-V .modal-register-V .modal-response.sent-response-V p,
-  .Transelca-V .modal-register-V .modal-response.sent-response-V i {
+  .Transelca-V .contact-V .modal-response.sent-response-V p,
+  .Transelca-V .contact-V .modal-response.sent-response-V i,
+  .Transelca-V .ethical-issues-V .modal-response.sent-response-V p,
+  .Transelca-V .ethical-issues-V .modal-response.sent-response-V i,
+  .Transelca-V .register-V .modal-response.sent-response-V p,
+  .Transelca-V .register-V .modal-response.sent-response-V i {
     color: var(--dark-blue-50); }
   .Transelca-V .modal-login-V .modal-response.error-response-V .logo-V,
-  .Transelca-V .modal-contact-V .modal-response.error-response-V .logo-V,
-  .Transelca-V .modal-ethical-V .modal-response.error-response-V .logo-V,
-  .Transelca-V .modal-register-V .modal-response.error-response-V .logo-V {
+  .Transelca-V .contact-V .modal-response.error-response-V .logo-V,
+  .Transelca-V .ethical-issues-V .modal-response.error-response-V .logo-V,
+  .Transelca-V .register-V .modal-response.error-response-V .logo-V {
     border-color: var(--error-color); }
   .Transelca-V .modal-login-V .modal-response.error-response-V p,
   .Transelca-V .modal-login-V .modal-response.error-response-V i,
-  .Transelca-V .modal-contact-V .modal-response.error-response-V p,
-  .Transelca-V .modal-contact-V .modal-response.error-response-V i,
-  .Transelca-V .modal-ethical-V .modal-response.error-response-V p,
-  .Transelca-V .modal-ethical-V .modal-response.error-response-V i,
-  .Transelca-V .modal-register-V .modal-response.error-response-V p,
-  .Transelca-V .modal-register-V .modal-response.error-response-V i {
+  .Transelca-V .contact-V .modal-response.error-response-V p,
+  .Transelca-V .contact-V .modal-response.error-response-V i,
+  .Transelca-V .ethical-issues-V .modal-response.error-response-V p,
+  .Transelca-V .ethical-issues-V .modal-response.error-response-V i,
+  .Transelca-V .register-V .modal-response.error-response-V p,
+  .Transelca-V .register-V .modal-response.error-response-V i {
     color: var(--error-color); }
 .Transelca-V .modal-login-V .login-V .modal-content .modal-body form,
-.Transelca-V .modal-contact-V .login-V .modal-content .modal-body form,
-.Transelca-V .modal-ethical-V .login-V .modal-content .modal-body form,
-.Transelca-V .modal-register-V .login-V .modal-content .modal-body form {
+.Transelca-V .contact-V .login-V .modal-content .modal-body form,
+.Transelca-V .ethical-issues-V .login-V .modal-content .modal-body form,
+.Transelca-V .register-V .login-V .modal-content .modal-body form {
   padding: 0px 20px;
   font-family: var(--font-regular);
   font-size: var(--font-size-16); }
   .Transelca-V .modal-login-V .login-V .modal-content .modal-body form label,
-  .Transelca-V .modal-contact-V .login-V .modal-content .modal-body form label,
-  .Transelca-V .modal-ethical-V .login-V .modal-content .modal-body form label,
-  .Transelca-V .modal-register-V .login-V .modal-content .modal-body form label {
+  .Transelca-V .contact-V .login-V .modal-content .modal-body form label,
+  .Transelca-V .ethical-issues-V .login-V .modal-content .modal-body form label,
+  .Transelca-V .register-V .login-V .modal-content .modal-body form label {
     color: var(--dark-blue-50); }
   .Transelca-V .modal-login-V .login-V .modal-content .modal-body form input,
-  .Transelca-V .modal-contact-V .login-V .modal-content .modal-body form input,
-  .Transelca-V .modal-ethical-V .login-V .modal-content .modal-body form input,
-  .Transelca-V .modal-register-V .login-V .modal-content .modal-body form input {
+  .Transelca-V .contact-V .login-V .modal-content .modal-body form input,
+  .Transelca-V .ethical-issues-V .login-V .modal-content .modal-body form input,
+  .Transelca-V .register-V .login-V .modal-content .modal-body form input {
     border: 1px solid var(--dark-blue-50);
     border-radius: 20px; }
     .Transelca-V .modal-login-V .login-V .modal-content .modal-body form input::placeholder,
-    .Transelca-V .modal-contact-V .login-V .modal-content .modal-body form input::placeholder,
-    .Transelca-V .modal-ethical-V .login-V .modal-content .modal-body form input::placeholder,
-    .Transelca-V .modal-register-V .login-V .modal-content .modal-body form input::placeholder {
+    .Transelca-V .contact-V .login-V .modal-content .modal-body form input::placeholder,
+    .Transelca-V .ethical-issues-V .login-V .modal-content .modal-body form input::placeholder,
+    .Transelca-V .register-V .login-V .modal-content .modal-body form input::placeholder {
+      color: var(--dark-blue-50); }
+    .Transelca-V .modal-login-V .login-V .modal-content .modal-body form input::-moz-placeholder,
+    .Transelca-V .contact-V .login-V .modal-content .modal-body form input::-moz-placeholder,
+    .Transelca-V .ethical-issues-V .login-V .modal-content .modal-body form input::-moz-placeholder,
+    .Transelca-V .register-V .login-V .modal-content .modal-body form input::-moz-placeholder {
       color: var(--dark-blue-50); }
   .Transelca-V .modal-login-V .login-V .modal-content .modal-body form .form-group.has-error label,
-  .Transelca-V .modal-contact-V .login-V .modal-content .modal-body form .form-group.has-error label,
-  .Transelca-V .modal-ethical-V .login-V .modal-content .modal-body form .form-group.has-error label,
-  .Transelca-V .modal-register-V .login-V .modal-content .modal-body form .form-group.has-error label {
+  .Transelca-V .contact-V .login-V .modal-content .modal-body form .form-group.has-error label,
+  .Transelca-V .ethical-issues-V .login-V .modal-content .modal-body form .form-group.has-error label,
+  .Transelca-V .register-V .login-V .modal-content .modal-body form .form-group.has-error label {
     color: var(--error-color); }
   .Transelca-V .modal-login-V .login-V .modal-content .modal-body form .form-group.has-error input,
-  .Transelca-V .modal-contact-V .login-V .modal-content .modal-body form .form-group.has-error input,
-  .Transelca-V .modal-ethical-V .login-V .modal-content .modal-body form .form-group.has-error input,
-  .Transelca-V .modal-register-V .login-V .modal-content .modal-body form .form-group.has-error input {
+  .Transelca-V .contact-V .login-V .modal-content .modal-body form .form-group.has-error input,
+  .Transelca-V .ethical-issues-V .login-V .modal-content .modal-body form .form-group.has-error input,
+  .Transelca-V .register-V .login-V .modal-content .modal-body form .form-group.has-error input {
     border-color: var(--error-color); }
     .Transelca-V .modal-login-V .login-V .modal-content .modal-body form .form-group.has-error input::placeholder,
-    .Transelca-V .modal-contact-V .login-V .modal-content .modal-body form .form-group.has-error input::placeholder,
-    .Transelca-V .modal-ethical-V .login-V .modal-content .modal-body form .form-group.has-error input::placeholder,
-    .Transelca-V .modal-register-V .login-V .modal-content .modal-body form .form-group.has-error input::placeholder {
+    .Transelca-V .contact-V .login-V .modal-content .modal-body form .form-group.has-error input::placeholder,
+    .Transelca-V .ethical-issues-V .login-V .modal-content .modal-body form .form-group.has-error input::placeholder,
+    .Transelca-V .register-V .login-V .modal-content .modal-body form .form-group.has-error input::placeholder {
       color: var(--error-color); }
-  .Transelca-V .modal-login-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--rotated,
-  .Transelca-V .modal-contact-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--rotated,
-  .Transelca-V .modal-ethical-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--rotated,
-  .Transelca-V .modal-register-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--rotated {
+    .Transelca-V .modal-login-V .login-V .modal-content .modal-body form .form-group.has-error input::-moz-placeholder,
+    .Transelca-V .contact-V .login-V .modal-content .modal-body form .form-group.has-error input::-moz-placeholder,
+    .Transelca-V .ethical-issues-V .login-V .modal-content .modal-body form .form-group.has-error input::-moz-placeholder,
+    .Transelca-V .register-V .login-V .modal-content .modal-body form .form-group.has-error input::-moz-placeholder {
+      color: var(--error-color); }
+  .Transelca-V .modal-login-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--rotated,
+  .Transelca-V .contact-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--rotated,
+  .Transelca-V .ethical-issues-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--rotated,
+  .Transelca-V .register-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--rotated {
     width: 40px;
     height: 40px;
     padding: 0;
@@ -582,46 +600,46 @@
     border-left-color: var(--dark-blue-50);
     animation: rotating 2s 0.25s linear infinite;
     background: none; }
-    .Transelca-V .modal-login-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--rotated:after,
-    .Transelca-V .modal-contact-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--rotated:after,
-    .Transelca-V .modal-ethical-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--rotated:after,
-    .Transelca-V .modal-register-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--rotated:after {
+    .Transelca-V .modal-login-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--rotated:after,
+    .Transelca-V .contact-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--rotated:after,
+    .Transelca-V .ethical-issues-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--rotated:after,
+    .Transelca-V .register-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--rotated:after {
       content: ""; }
-    .Transelca-V .modal-login-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--rotated:hover,
-    .Transelca-V .modal-contact-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--rotated:hover,
-    .Transelca-V .modal-ethical-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--rotated:hover,
-    .Transelca-V .modal-register-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--rotated:hover {
+    .Transelca-V .modal-login-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--rotated:hover,
+    .Transelca-V .contact-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--rotated:hover,
+    .Transelca-V .ethical-issues-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--rotated:hover,
+    .Transelca-V .register-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--rotated:hover {
       color: var(--dark-blue-50);
       background: white; }
-  .Transelca-V .modal-login-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--validated,
-  .Transelca-V .modal-contact-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--validated,
-  .Transelca-V .modal-ethical-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--validated,
-  .Transelca-V .modal-register-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--validated {
+  .Transelca-V .modal-login-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--validated,
+  .Transelca-V .contact-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--validated,
+  .Transelca-V .ethical-issues-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--validated,
+  .Transelca-V .register-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--validated {
     color: white;
     background: var(--dark-blue-50); }
-    .Transelca-V .modal-login-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--validated:after,
-    .Transelca-V .modal-contact-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--validated:after,
-    .Transelca-V .modal-ethical-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--validated:after,
-    .Transelca-V .modal-register-V .login-V .modal-content .modal-body form .btn-isa a.t-is-login__btn--validated:after {
+    .Transelca-V .modal-login-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--validated:after,
+    .Transelca-V .contact-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--validated:after,
+    .Transelca-V .ethical-issues-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--validated:after,
+    .Transelca-V .register-V .login-V .modal-content .modal-body form .btn-isa button.t-is-login__btn--validated:after {
       font-family: "FontAwesome";
       content: "\f00c"; }
 .Transelca-V .modal-login-V .login-V .modal-content .modal-body .captcha-V,
-.Transelca-V .modal-contact-V .login-V .modal-content .modal-body .captcha-V,
-.Transelca-V .modal-ethical-V .login-V .modal-content .modal-body .captcha-V,
-.Transelca-V .modal-register-V .login-V .modal-content .modal-body .captcha-V {
+.Transelca-V .contact-V .login-V .modal-content .modal-body .captcha-V,
+.Transelca-V .ethical-issues-V .login-V .modal-content .modal-body .captcha-V,
+.Transelca-V .register-V .login-V .modal-content .modal-body .captcha-V {
   max-width: 308px;
   max-height: 78px; }
 .Transelca-V .modal-login-V .login-V .modal-content .modal-footer,
-.Transelca-V .modal-contact-V .login-V .modal-content .modal-footer,
-.Transelca-V .modal-ethical-V .login-V .modal-content .modal-footer,
-.Transelca-V .modal-register-V .login-V .modal-content .modal-footer {
+.Transelca-V .contact-V .login-V .modal-content .modal-footer,
+.Transelca-V .ethical-issues-V .login-V .modal-content .modal-footer,
+.Transelca-V .register-V .login-V .modal-content .modal-footer {
   padding: 0px 36px;
   padding-bottom: 25px;
   justify-content: center; }
   .Transelca-V .modal-login-V .login-V .modal-content .modal-footer a,
-  .Transelca-V .modal-contact-V .login-V .modal-content .modal-footer a,
-  .Transelca-V .modal-ethical-V .login-V .modal-content .modal-footer a,
-  .Transelca-V .modal-register-V .login-V .modal-content .modal-footer a {
+  .Transelca-V .contact-V .login-V .modal-content .modal-footer a,
+  .Transelca-V .ethical-issues-V .login-V .modal-content .modal-footer a,
+  .Transelca-V .register-V .login-V .modal-content .modal-footer a {
     color: var(--dark-blue-50); }
 .Transelca-V .footer-V {
   padding-bottom: 30px; }
@@ -788,7 +806,9 @@
     width: 100%;
     overflow: hidden; }
     .Transelca-V .t-c-banner-icon .t-c-banner-icon__img img {
+      -o-object-fit: cover;
       object-fit: cover;
+      -o-object-position: 100% -450px;
       object-position: 100% -450px; }
   .Transelca-V .t-c-banner-icon .t-c-banner-icon__onda {
     position: absolute;
@@ -838,7 +858,9 @@
     overflow: hidden; }
     .Transelca-V .t-c-banner-prensa .t-c-banner-prensa__img img {
       width: 100%;
+      -o-object-fit: cover;
       object-fit: cover;
+      -o-object-position: 100% -450px;
       object-position: 100% -450px; }
   .Transelca-V .t-c-banner-prensa .t-c-banner-prensa__onda {
     position: absolute;
@@ -979,8 +1001,10 @@
       .Transelca-V .t-c-banner-silder-h09 .owl-carousel .item .t-c-banner-silder-h09__box-content .t-c-banner-silder-h09__column .t-c-banner-silder-h09__description {
         font-size: var(--font-size-12); }
       .Transelca-V .t-c-banner-silder-h09 .owl-carousel .item .t-c-banner-silder-h09__box-content .t-c-banner-silder-h09__column .t-c-banner-silder-h09__column__img {
+        -o-object-fit: cover;
         object-fit: cover;
         overflow: hidden;
+        -o-object-position: center;
         object-position: center;
         height: 100%; }
         .Transelca-V .t-c-banner-silder-h09 .owl-carousel .item .t-c-banner-silder-h09__box-content .t-c-banner-silder-h09__column .t-c-banner-silder-h09__column__img img {
@@ -1097,6 +1121,7 @@
             content: "\f178";
             font-size: 20px;
             position: relative;
+            height: -moz-min-content;
             height: min-content;
             left: 40px;
             top: 0;
@@ -1121,7 +1146,9 @@
     z-index: -1;
     display: block; }
     .Transelca-V .t-c-banner-onda .container-banner .t-c-banner-onda__img img {
+      -o-object-fit: cover;
       object-fit: cover;
+      -o-object-position: center;
       object-position: center;
       width: 100%;
       height: 100%; }
@@ -1201,7 +1228,9 @@
         box-sizing: border-box;
         border-radius: 5px; }
         .Transelca-V .t-c-sbanner-r .d-flex .owl-carousel .item .t-c-sbanner-r__box-content figure img {
+          -o-object-fit: cover;
           object-fit: cover;
+          -o-object-position: center;
           object-position: center;
           height: 100%;
           border-radius: 5px; }
@@ -1488,6 +1517,25 @@
   .Transelca-V .register-form-V .form-group select::placeholder,
   .Transelca-V .register-form-V .form-group textarea::placeholder {
     color: var(--dark-blue-50); }
+  .Transelca-V .contact-V .form-group input[type="text"]::-moz-placeholder,
+  .Transelca-V .contact-V .form-group input[type="number"]::-moz-placeholder,
+  .Transelca-V .contact-V .form-group input[type="email"]::-moz-placeholder,
+  .Transelca-V .contact-V .form-group input[type="password"]::-moz-placeholder,
+  .Transelca-V .contact-V .form-group select::-moz-placeholder,
+  .Transelca-V .contact-V .form-group textarea::-moz-placeholder,
+  .Transelca-V .ethical-issues-V .form-group input[type="text"]::-moz-placeholder,
+  .Transelca-V .ethical-issues-V .form-group input[type="number"]::-moz-placeholder,
+  .Transelca-V .ethical-issues-V .form-group input[type="email"]::-moz-placeholder,
+  .Transelca-V .ethical-issues-V .form-group input[type="password"]::-moz-placeholder,
+  .Transelca-V .ethical-issues-V .form-group select::-moz-placeholder,
+  .Transelca-V .ethical-issues-V .form-group textarea::-moz-placeholder,
+  .Transelca-V .register-form-V .form-group input[type="text"]::-moz-placeholder,
+  .Transelca-V .register-form-V .form-group input[type="number"]::-moz-placeholder,
+  .Transelca-V .register-form-V .form-group input[type="email"]::-moz-placeholder,
+  .Transelca-V .register-form-V .form-group input[type="password"]::-moz-placeholder,
+  .Transelca-V .register-form-V .form-group select::-moz-placeholder,
+  .Transelca-V .register-form-V .form-group textarea::-moz-placeholder {
+    color: var(--dark-blue-50); }
 .Transelca-V .contact-V .form-group input.is-invalid,
 .Transelca-V .contact-V .form-group textarea.is-invalid,
 .Transelca-V .ethical-issues-V .form-group input.is-invalid,
@@ -1502,6 +1550,13 @@
   .Transelca-V .ethical-issues-V .form-group textarea.is-invalid::placeholder,
   .Transelca-V .register-form-V .form-group input.is-invalid::placeholder,
   .Transelca-V .register-form-V .form-group textarea.is-invalid::placeholder {
+    color: var(--error-color); }
+  .Transelca-V .contact-V .form-group input.is-invalid::-moz-placeholder,
+  .Transelca-V .contact-V .form-group textarea.is-invalid::-moz-placeholder,
+  .Transelca-V .ethical-issues-V .form-group input.is-invalid::-moz-placeholder,
+  .Transelca-V .ethical-issues-V .form-group textarea.is-invalid::-moz-placeholder,
+  .Transelca-V .register-form-V .form-group input.is-invalid::-moz-placeholder,
+  .Transelca-V .register-form-V .form-group textarea.is-invalid::-moz-placeholder {
     color: var(--error-color); }
 .Transelca-V .contact-V .form-group.password-V,
 .Transelca-V .ethical-issues-V .form-group.password-V,
@@ -1545,18 +1600,27 @@
 .Transelca-V .register-form-V .form-group input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0; }
+.Transelca-V .contact-V .form-group input[type="password"]::-ms-reveal,
 .Transelca-V .contact-V .form-group select,
+.Transelca-V .ethical-issues-V .form-group input[type="password"]::-ms-reveal,
 .Transelca-V .ethical-issues-V .form-group select,
+.Transelca-V .register-form-V .form-group input[type="password"]::-ms-reveal,
 .Transelca-V .register-form-V .form-group select {
   padding-right: 30px;
   height: 45px;
   color: var(--dark-blue-50); }
+  .Transelca-V .contact-V .form-group input[type="password"]::-ms-reveal option,
   .Transelca-V .contact-V .form-group select option,
+  .Transelca-V .ethical-issues-V .form-group input[type="password"]::-ms-reveal option,
   .Transelca-V .ethical-issues-V .form-group select option,
+  .Transelca-V .register-form-V .form-group input[type="password"]::-ms-reveal option,
   .Transelca-V .register-form-V .form-group select option {
     color: var(--dark-blue-50); }
+  .Transelca-V .contact-V .form-group input[type="password"]::-ms-reveal:not([multiple]):not([size]),
   .Transelca-V .contact-V .form-group select:not([multiple]):not([size]),
+  .Transelca-V .ethical-issues-V .form-group input[type="password"]::-ms-reveal:not([multiple]):not([size]),
   .Transelca-V .ethical-issues-V .form-group select:not([multiple]):not([size]),
+  .Transelca-V .register-form-V .form-group input[type="password"]::-ms-reveal:not([multiple]):not([size]),
   .Transelca-V .register-form-V .form-group select:not([multiple]):not([size]) {
     -webkit-appearance: none;
     background-image: url(../images/icons/arrow-down.svg);
@@ -1579,6 +1643,8 @@
   .Transelca-V .contact-V .form-check input[type="radio"],
   .Transelca-V .ethical-issues-V .form-check input[type="radio"],
   .Transelca-V .register-form-V .form-check input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     border-radius: 50%;
     border: 1px solid var(--dark-blue-50);
@@ -1625,6 +1691,7 @@
     width: 40.965%; }
     .Transelca-V .simple-banner-V .container-banner .mask-V {
       width: 100%;
+      -o-object-fit: cover;
       object-fit: cover; }
 .Transelca-V .big-banner-V {
   margin-bottom: 30px; }
@@ -1656,6 +1723,7 @@
     .Transelca-V .big-banner-V .container-image img {
       width: 100%;
       height: 100%;
+      -o-object-fit: contain;
       object-fit: contain; }
   .Transelca-V .big-banner-V .container-banner {
     position: absolute;
@@ -1687,7 +1755,9 @@
       background: black;
       background: linear-gradient(90deg, black 0%, rgba(250, 250, 251, 0) 40%, rgba(255, 255, 255, 0) 60%, black 100%); }
     .Transelca-V .big-banner-V .container-banner img {
+      -o-object-fit: cover;
       object-fit: cover;
+      -o-object-position: center;
       object-position: center;
       width: 100%;
       height: 100%; }
@@ -1773,6 +1843,7 @@
   .Transelca-V .download-4-V .container-download,
   .Transelca-V .download-age-V .container-download,
   .Transelca-V .download-list-V .container-download {
+    height: -moz-min-content;
     height: min-content;
     border-radius: 12px;
     border: solid var(--orange-50);
@@ -1847,6 +1918,7 @@
     .Transelca-V .download-center-V.variant-V .header-content h5,
     .Transelca-V .download-center-V.variant-V .header-content h6,
     .Transelca-V .download-center-V.variant-V .header-content p {
+      height: -moz-min-content;
       height: min-content; }
     .Transelca-V .download-center-V.variant-V .header-content p {
       margin-bottom: 0px;
@@ -2033,6 +2105,7 @@
       .Transelca-V .members-galery-V .container-grid .item .d-flex .mask-V {
         border-radius: 15px 0px 0px 0px;
         width: 50%;
+        -o-object-fit: contain;
         object-fit: contain; }
       .Transelca-V .members-galery-V .container-grid .item .d-flex .container-text {
         width: 50%; }
@@ -2211,7 +2284,9 @@
         width: 30px;
         height: 30px;
         overflow: hidden;
+        -o-object-fit: contain;
         object-fit: contain;
+        -o-object-position: center;
         object-position: center; }
         .Transelca-V .social-V .social-list li a img {
           width: 100%;
@@ -2417,6 +2492,8 @@
           padding-left: 15px; }
           .Transelca-V .search-results-V .container .search-container form .container-input input::placeholder {
             font-family: var(--font-regular); }
+          .Transelca-V .search-results-V .container .search-container form .container-input input::-moz-placeholder {
+            font-family: var(--font-regular); }
       .Transelca-V .search-results-V .container .search-container form .btn-isa {
         width: 40px; }
         .Transelca-V .search-results-V .container .search-container form .btn-isa button {
@@ -2471,6 +2548,9 @@
   .Transelca-V #body_efb.efb textarea::placeholder {
     color: var(--dark-blue-50) !important;
     opacity: 1 !important; }
+  .Transelca-V #body_efb.efb textarea::-moz-placeholder {
+    color: var(--dark-blue-50) !important;
+    opacity: 1 !important; }
 .Transelca-V #body_efb.efb input[type="text"]::placeholder,
 .Transelca-V #body_efb.efb input[type="password"]::placeholder,
 .Transelca-V #body_efb.efb input[type="email"]::placeholder,
@@ -2478,6 +2558,15 @@
 .Transelca-V #body_efb.efb input[type="number"]::placeholder,
 .Transelca-V #body_efb.efb input[type="url"]::placeholder,
 .Transelca-V #body_efb.efb input[type="textarea"]::placeholder {
+  color: var(--dark-blue-50) !important;
+  opacity: 1 !important; }
+.Transelca-V #body_efb.efb input[type="text"]::-moz-placeholder,
+.Transelca-V #body_efb.efb input[type="password"]::-moz-placeholder,
+.Transelca-V #body_efb.efb input[type="email"]::-moz-placeholder,
+.Transelca-V #body_efb.efb input[type="tel"]::-moz-placeholder,
+.Transelca-V #body_efb.efb input[type="number"]::-moz-placeholder,
+.Transelca-V #body_efb.efb input[type="url"]::-moz-placeholder,
+.Transelca-V #body_efb.efb input[type="textarea"]::-moz-placeholder {
   color: var(--dark-blue-50) !important;
   opacity: 1 !important; }
 .Transelca-V #body_efb.efb h4#title_efb {
