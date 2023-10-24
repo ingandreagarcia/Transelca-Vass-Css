@@ -239,8 +239,10 @@
 
   .mask-V {
     overflow: hidden;
+    -o-object-fit: cover;
     object-fit: cover;
     object-position: center;
+    -o-object-position: center;
     img {
       width: 100%;
       height: 100%;

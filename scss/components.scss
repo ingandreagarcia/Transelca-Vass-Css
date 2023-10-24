@@ -194,6 +194,8 @@
               background-color: transparent;
               color: var(--white-main);
               border: 0px;
+              padding-top: 16px;
+              padding-bottom: 16px;
             }
 
             option {
@@ -355,9 +357,9 @@
 
   //Login y modal HU 24 contactenos
   .modal-login-V,
-  .contact-V,
-  .ethical-issues-V,
-  .register-V {
+  .modal-contact-V,
+  .modal-ethical-V,
+  .modal-register-V {
     .modal-header {
       border: 0px;
 
@@ -864,8 +866,8 @@
         width: 100%;
         -o-object-fit: cover;
         object-fit: cover;
-        -o-object-position: 100% -450px;
-        object-position: 100% -450px;
+        -o-object-position: 100% -170px;
+        object-position: 100% -170px;
       }
     }
 
