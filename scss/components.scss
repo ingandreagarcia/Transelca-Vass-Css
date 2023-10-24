@@ -1788,7 +1788,8 @@
 
         .input-group-append {
           position: absolute;
-          bottom: 9px;
+          bottom: unset;
+          top: 43px;
           right: 12px;
 
           button {
@@ -1801,8 +1802,6 @@
           }
 
           &.is-invalid {
-            bottom: 36px;
-
             button {
               .icon-V {
                 color: var(--error-color);

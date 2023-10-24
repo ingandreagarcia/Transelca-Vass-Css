@@ -1577,7 +1577,8 @@
   .Transelca-V .ethical-issues-V .form-group.password-V .input-group-append,
   .Transelca-V .register-form-V .form-group.password-V .input-group-append {
     position: absolute;
-    bottom: 9px;
+    bottom: unset;
+    top: 43px;
     right: 12px; }
     .Transelca-V .contact-V .form-group.password-V .input-group-append button,
     .Transelca-V .ethical-issues-V .form-group.password-V .input-group-append button,
@@ -1588,14 +1589,10 @@
       .Transelca-V .ethical-issues-V .form-group.password-V .input-group-append button .icon-V,
       .Transelca-V .register-form-V .form-group.password-V .input-group-append button .icon-V {
         color: var(--dark-blue-50); }
-    .Transelca-V .contact-V .form-group.password-V .input-group-append.is-invalid,
-    .Transelca-V .ethical-issues-V .form-group.password-V .input-group-append.is-invalid,
-    .Transelca-V .register-form-V .form-group.password-V .input-group-append.is-invalid {
-      bottom: 36px; }
-      .Transelca-V .contact-V .form-group.password-V .input-group-append.is-invalid button .icon-V,
-      .Transelca-V .ethical-issues-V .form-group.password-V .input-group-append.is-invalid button .icon-V,
-      .Transelca-V .register-form-V .form-group.password-V .input-group-append.is-invalid button .icon-V {
-        color: var(--error-color); }
+    .Transelca-V .contact-V .form-group.password-V .input-group-append.is-invalid button .icon-V,
+    .Transelca-V .ethical-issues-V .form-group.password-V .input-group-append.is-invalid button .icon-V,
+    .Transelca-V .register-form-V .form-group.password-V .input-group-append.is-invalid button .icon-V {
+      color: var(--error-color); }
 .Transelca-V .contact-V .form-group input[type="number"]::-webkit-inner-spin-button,
 .Transelca-V .contact-V .form-group input[type="number"]::-webkit-outer-spin-button,
 .Transelca-V .ethical-issues-V .form-group input[type="number"]::-webkit-inner-spin-button,
