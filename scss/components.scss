@@ -1887,6 +1887,42 @@
       background-image: none;
       color: var(--error-color);
     }
+
+    form.form-float-V {
+        .btn-isa {
+            button {
+              &.t-is-login__btn--rotated {
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                border-color: var(--black-20);
+                border-width: 3px;
+                border-left-color: var(--dark-blue-50);
+                animation: rotating 2s 0.25s linear infinite;
+                background: none;
+
+                &:after {
+                  content: "";
+                }
+
+                &:hover {
+                  color: var(--dark-blue-50);
+                  background: white;
+                }
+              }
+
+              &.t-is-login__btn--validated {
+                color: white;
+                background: var(--dark-blue-50);
+
+                &:after {
+                  font-family: "FontAwesome";
+                  content: "\f00c";
+                }
+              }
+            }
+          }
+    }
   }
 
   .simple-banner-V {

@@ -1677,6 +1677,36 @@
   border-color: var(--error-color);
   background-image: none;
   color: var(--error-color); }
+.Transelca-V .contact-V form.form-float-V .btn-isa button.t-is-login__btn--rotated,
+.Transelca-V .ethical-issues-V form.form-float-V .btn-isa button.t-is-login__btn--rotated,
+.Transelca-V .register-form-V form.form-float-V .btn-isa button.t-is-login__btn--rotated {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-color: var(--black-20);
+  border-width: 3px;
+  border-left-color: var(--dark-blue-50);
+  animation: rotating 2s 0.25s linear infinite;
+  background: none; }
+  .Transelca-V .contact-V form.form-float-V .btn-isa button.t-is-login__btn--rotated:after,
+  .Transelca-V .ethical-issues-V form.form-float-V .btn-isa button.t-is-login__btn--rotated:after,
+  .Transelca-V .register-form-V form.form-float-V .btn-isa button.t-is-login__btn--rotated:after {
+    content: ""; }
+  .Transelca-V .contact-V form.form-float-V .btn-isa button.t-is-login__btn--rotated:hover,
+  .Transelca-V .ethical-issues-V form.form-float-V .btn-isa button.t-is-login__btn--rotated:hover,
+  .Transelca-V .register-form-V form.form-float-V .btn-isa button.t-is-login__btn--rotated:hover {
+    color: var(--dark-blue-50);
+    background: white; }
+.Transelca-V .contact-V form.form-float-V .btn-isa button.t-is-login__btn--validated,
+.Transelca-V .ethical-issues-V form.form-float-V .btn-isa button.t-is-login__btn--validated,
+.Transelca-V .register-form-V form.form-float-V .btn-isa button.t-is-login__btn--validated {
+  color: white;
+  background: var(--dark-blue-50); }
+  .Transelca-V .contact-V form.form-float-V .btn-isa button.t-is-login__btn--validated:after,
+  .Transelca-V .ethical-issues-V form.form-float-V .btn-isa button.t-is-login__btn--validated:after,
+  .Transelca-V .register-form-V form.form-float-V .btn-isa button.t-is-login__btn--validated:after {
+    font-family: "FontAwesome";
+    content: "\f00c"; }
 .Transelca-V .simple-banner-V {
   padding-top: 10px;
   padding-bottom: 0px; }
