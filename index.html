@@ -681,7 +681,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form  name="sh-ajax-login-form" id="sh-ajax-login-form">
               <fieldset>
                 <legend class="sr-only">Datos de inicio de sesion</legend>
                 <div class="form-group">
@@ -709,9 +709,11 @@
                 <img src="./images/captcha.PNG" alt="capt" />
               </div>
               <div class="btn-isa mt-4 d-flex justify-content-center">
-                <a title="Iniciar Sesion" href="#" id="validateLogin"
-                  >Iniciar Sesion</a
-                >
+                <button title="Iniciar Sesion" 
+                  type="submit" 
+                  id="validateLogin"
+                  >Iniciar Sesion
+                </button>
               </div>
             </form>
           </div>
@@ -1564,7 +1566,7 @@
           </div>
         </fieldset>
         <div class="d-flex justify-content-center btn-isa mx-auto mt-4">
-          <button type="submit">Enviar</button>
+          <button id="btnSubmitContact" type="submit">Enviar</button>
         </div>
       </form>
       <!-- Modal -->
@@ -1786,7 +1788,7 @@
           <img src="./images/captcha.PNG" alt="capt" />
         </div>
         <div class="btn-isa mx-auto mt-4 d-flex justify-content-center">
-          <button type="submit" data-target="#response-ethical">Enviar</button>
+          <button type="submit" id="submit-e" data-target="#response-ethical">Enviar</button>
         </div>
       </form>
       <!-- Modal -->
@@ -3648,7 +3650,7 @@
         </div>
         <div class="d-flex justify-content-center mt-4">
           <div class="btn-isa mx-2">
-            <button type="submit" data-toggle="modal" data-target="#">
+            <button id="validateRegisterP" type="submit" data-toggle="modal" data-target="#">
               Crear cuenta
             </button>
           </div>

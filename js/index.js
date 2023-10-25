@@ -69,6 +69,14 @@ $(".nav-item .nav-link").keydown(function (e) {
 $("#login-V").on("hidden.bs.modal", function (event) {
   $(".nav-item.btn-login-V .nav-link").focus();
 });
+$('#sh-ajax-login-form').on('submit', function (event) {
+  startLoading("#validateLogin");
+  event.preventDefault(); // avoid to execute the actual submit of the form.
+
+  // realizar validaciones
+
+  stopLoading("#validateLogin", "Iniciar Sesión");
+});
 
 function hideSearch() {
   console.log($(this));
@@ -205,25 +213,21 @@ function isValidateContact() {
 //modal al clikear submit
 $(".contact-V button:submit").click(function (e) {
   e.preventDefault(); // avoid to execute the actual submit of the form.
-  var form = $("#theFormContact");
+  startLoading("#btnSubmitContact");
+
+  let status = "success";
   let countValidate = isValidateContact();
-  var actionUrl = "../vassapi/forms.php"; //form.attr('action');
   if (countValidate == 0) {
-    $.ajax({
-      type: "POST",
-      url: actionUrl,
-      data: form.serialize(),
-    }).done(function (response, status) {
-      if (status == "success" && response.status == "success") {
-        $("#response-contact").find(".sent-response-V").removeClass("d-none");
-        $("#response-contact").find(".error-response-V").addClass("d-none");
-      } else {
-        $("#response-contact").find(".error-response-V").removeClass("d-none");
-        $("#response-contact").find(".sent-response-V").addClass("d-none");
-      }
-      $("#response-contact").modal("show");
-      location.href = "../";
-    });
+    if (status == "success") {
+      $("#response-contact").find(".sent-response-V").removeClass("d-none");
+      $("#response-contact").find(".error-response-V").addClass("d-none");
+    } else {
+      $("#response-contact").find(".error-response-V").removeClass("d-none");
+      $("#response-contact").find(".sent-response-V").addClass("d-none");
+    }
+    stopLoading("#btnSubmitContact", "Enviar");
+    $("#response-contact").modal("show");
+    //location.href = "../";
   }
 });
 
@@ -376,26 +380,21 @@ function validateSubmitEthical() {
 //modal al clikear submit ASUNTOS ETICOS
 $(".ethical-issues-V button:submit").click(function (e) {
   e.preventDefault(); // avoid to execute the actual submit of the form.
+  startLoading("#submit-e");
 
-  var form = $("#theFormContact");
-  var actionUrl = "../vassapi/forms.php";
   let countValidateEthical = validateSubmitEthical();
+  let status = "success";
   if (countValidateEthical == 0) {
-    $.ajax({
-      type: "POST",
-      url: actionUrl,
-      data: form.serialize(),
-    }).done(function (response, status) {
-      if (status == "success" && response.status == "success") {
-        $("#response-ethical").find(".sent-response-V").removeClass("d-none");
-        $("#response-ethical").find(".error-response-V").addClass("d-none");
-      } else {
-        $("#response-ethical").find(".error-response-V").removeClass("d-none");
-        $("#response-ethical").find(".sent-response-V").addClass("d-none");
-      }
-      $("#response-ethical").modal("show");
-      location.href = "../";
-    });
+    if (status == "success") {
+      $("#response-ethical").find(".sent-response-V").removeClass("d-none");
+      $("#response-ethical").find(".error-response-V").addClass("d-none");
+    } else {
+      $("#response-ethical").find(".error-response-V").removeClass("d-none");
+      $("#response-ethical").find(".sent-response-V").addClass("d-none");
+    }
+    stopLoading("#submit-e", "Enviar");
+    $("#response-ethical").modal("show");
+    //location.href = "../";
   }
 });
 
@@ -459,47 +458,24 @@ function validateSubmitRegister() {
 //modal al clikear submit
 $(".register-form-V button:submit").click(function (e) {
   e.preventDefault(); // avoid to execute the actual submit of the form.
+  startLoading("#validateRegisterP");
 
-  var form = $("#registerform");
-  var actionUrl = "../vassapi/register.php";
-  data = form.serialize();
+  let status = "success";
   let countValidateRegister = validateSubmitRegister();
   if (countValidateRegister == 0) {
-    $.ajax({
-      type: "POST",
-      url: actionUrl,
-      data: data,
-    }).done(function (response, status) {
-      if (status == "success" && response.status == "success") {
-        $("#response-register").find(".sent-response-V").removeClass("d-none");
-        $("#response-register").find(".error-response-V").addClass("d-none");
-      } else {
-        $("#response-register")
-          .find(".error-response-V")
-          .find("p")
-          .html(response.message);
-        $("#response-register").find(".error-response-V").removeClass("d-none");
-        $("#response-register").find(".sent-response-V").addClass("d-none");
-      }
-      $("#response-register").modal("show");
-      if (status == "success" && response.status == "success") {
-        let formData = new FormData();
-        formData.append("file", fileRegister);
-        $.ajax({
-          type: "POST",
-          url: actionUrl + "?e=" + $("#email-R").val(),
-          mimeType: "multipart/form-data",
-          data: formData,
-          dataType: "json",
-          contentType: false,
-          processData: false,
-        }).done(function (response, status) {
-          if (status == "success" && response.status == "success") {
-            location.href = "../";
-          }
-        });
-      }
-    });
+    if (status == "success") {
+      $("#response-register").find(".sent-response-V").removeClass("d-none");
+      $("#response-register").find(".error-response-V").addClass("d-none");
+    } else {
+      $("#response-register")
+        .find(".error-response-V")
+        .find("p")
+        .html(response.message);
+      $("#response-register").find(".error-response-V").removeClass("d-none");
+      $("#response-register").find(".sent-response-V").addClass("d-none");
+    }
+    stopLoading("#validateRegisterP", "Crear cuenta");
+    $("#response-register").modal("show");
   }
 });
 var fileRegister;
@@ -815,20 +791,17 @@ $(document).ready(function () {
   }
 });*/
 
-$("#validateLogin").click(function () {
-  document.querySelector("#validateLogin").text = "";
-  $("#validateLogin").addClass("t-is-login__btn--rotated", 250, validateLogin());
-});
-
-function validateLogin() {
-  setTimeout(function () {
-    $("#validateLogin").removeClass("t-is-login__btn--rotated");
-    $("#validateLogin").addClass("t-is-login__btn--validated", 450, callbackButton());
-  }, 2250);
+function startLoading(id_button) {
+  $(id_button).text("");
+  $(id_button).addClass("t-is-login__btn--rotated");
 }
-function callbackButton() {
+function stopLoading(id_button, text) {
+  $(id_button).removeClass("t-is-login__btn--rotated");
+  $(id_button).addClass("t-is-login__btn--validated", 450, callbackButton(id_button, text));
+}
+function callbackButton(id_button, text) {
   setTimeout(function () {
-    $("#validateLogin").removeClass("t-is-login__btn--validated");
-    document.querySelector("#validateLogin").text = "Iniciar Sesion";
+    $(id_button).removeClass("t-is-login__btn--validated");
+    $(id_button).text(text);
   }, 1250);
 }
